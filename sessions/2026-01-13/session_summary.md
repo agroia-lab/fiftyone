@@ -68,9 +68,23 @@ points = results.points  # Shape: (97, 2)
 session = fo.launch_app(dataset, port=5151)
 ```
 
+## Image Classification by Embeddings
+
+Based on embedding analysis, images were automatically tagged:
+
+| Tag | Count | Description |
+|-----|-------|-------------|
+| `close-up`, `crop-inspection` | 89 | Low-altitude tomato inspection photos |
+| `overview`, `high-altitude` | 8 | High-altitude field mapping shots |
+
+**Outlier images identified** (high-altitude/overview):
+- DJI_0469.JPG, DJI_0509.JPG
+- DJI_0552.JPG - DJI_0557.JPG
+
+**Key finding**: CLIP embeddings successfully separated images by altitude/scale, not just GPS position. This enables automatic categorization of drone survey data.
+
 ## Next Steps
 
-- Investigate outlier images to understand what makes them visually distinct
-- Consider adding labels/tags to categorize image content
 - Compute similarity index for image search functionality
 - Load additional datasets from other field locations for comparison
+- Use tags to filter views for specific analysis tasks
