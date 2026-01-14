@@ -1,0 +1,112 @@
+% =============================================================================
+% MATERIALS AND METHODS
+% Status: DRAFT - Core methodology documented
+% =============================================================================
+
+\subsection{Study Area and Data Collection}
+
+\subsubsection{Location}
+Santa Ines agricultural field, Chile. Tomato cultivation site monitored via drone surveys.
+
+\todo{Add exact coordinates, field size, crop details}
+
+\subsubsection{Drone Imagery Dataset}
+\begin{itemize}
+    \item \textbf{Platform}: DJI drone (model TBD)
+    \item \textbf{Image count}: 97 images
+    \item \textbf{File format}: JPEG, approximately 10-12 MB per image
+    \item \textbf{Resolution}: High-resolution (dimensions TBD from metadata)
+    \item \textbf{Date}: January 2026
+\end{itemize}
+
+\subsection{Software Environment}
+
+\subsubsection{Dataset Management}
+FiftyOne v1.12.0 \citep{fiftyone} was used for dataset management, embedding computation, and visualization. FiftyOne provides:
+\begin{itemize}
+    \item Efficient handling of large image datasets
+    \item Built-in integration with embedding models
+    \item Interactive visualization tools
+    \item Similarity search functionality
+\end{itemize}
+
+\subsubsection{Analysis Tools}
+\begin{itemize}
+    \item \textbf{Python 3.12}: Data processing and embedding computation
+    \item \textbf{R 4.3.3}: Statistical analysis and visualization (ggplot2)
+    \item \textbf{PyTorch}: Deep learning backend for CLIP model
+\end{itemize}
+
+\subsection{Embedding Computation}
+
+\subsubsection{Model Selection}
+CLIP ViT-B/32 (Vision Transformer, Base, 32x32 patches) was selected for embedding computation. This model:
+\begin{itemize}
+    \item Provides 512-dimensional embeddings per image
+    \item Was pretrained on 400M image-text pairs
+    \item Offers good balance of computational efficiency and semantic richness
+\end{itemize}
+
+\subsubsection{Dimensionality Reduction}
+UMAP (Uniform Manifold Approximation and Projection) was applied to reduce embeddings from 512D to 2D for visualization:
+
+\begin{equation}
+    \mathbf{z}_i = \text{UMAP}(\mathbf{e}_i), \quad \mathbf{e}_i \in \mathbb{R}^{512}, \quad \mathbf{z}_i \in \mathbb{R}^{2}
+\end{equation}
+
+\todo{Add UMAP hyperparameters: n\_neighbors, min\_dist, metric}
+
+\subsubsection{Implementation}
+\begin{lstlisting}[language=Python, caption=Embedding computation with FiftyOne]
+import fiftyone as fo
+import fiftyone.brain as fob
+
+dataset = fo.load_dataset("santa_ines_dron")
+
+# Compute CLIP embeddings with UMAP projection
+fob.compute_visualization(
+    dataset,
+    brain_key="clip_viz",
+    model="clip-vit-base32-torch",
+    method="umap"
+)
+
+# Compute similarity index for retrieval
+fob.compute_similarity(
+    dataset,
+    brain_key="clip_similarity",
+    embeddings="clip_viz"
+)
+\end{lstlisting}
+
+\subsection{Clustering and Classification}
+
+Image clusters were identified through visual inspection of the UMAP projection. Two distinct clusters emerged:
+
+\begin{enumerate}
+    \item \textbf{Main cluster} (89 images): Concentrated in UMAP region $x \in [6.8, 10.5]$, $y \in [0.5, 4.5]$
+    \item \textbf{Outlier cluster} (8 images): Isolated at $x \approx 11.5$, $y \approx -0.7$
+\end{enumerate}
+
+Images were tagged based on cluster membership for subsequent analysis.
+
+\subsection{Similarity Network Analysis}
+
+To quantify cluster structure, a k-nearest neighbor graph was constructed:
+
+\begin{itemize}
+    \item Each image connected to its $k=3$ nearest neighbors in embedding space
+    \item Distance metric: Euclidean distance in 2D UMAP space
+    \item Edge classification: within-category vs. cross-category connections
+\end{itemize}
+
+\subsection{Statistical Analysis}
+
+Cluster cohesion was evaluated using:
+\begin{itemize}
+    \item Mean distance to $k$ nearest neighbors
+    \item Inter-cluster centroid distance
+    \item Proportion of cross-category edges in similarity network
+\end{itemize}
+
+All statistical analyses and visualizations were performed in R using ggplot2.

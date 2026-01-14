@@ -1,0 +1,20 @@
+% =============================================================================
+% CONCLUSIONS
+% Status: DRAFT - Summary of key findings
+% =============================================================================
+
+This study demonstrated that pretrained vision-language embeddings (CLIP) effectively organize agricultural drone imagery by semantic content without domain-specific training. Key findings include:
+
+\begin{enumerate}
+    \item \textbf{Automatic clustering}: CLIP embeddings with UMAP projection separated 97 drone images into two semantically meaningful clusters: close-up crop inspection (89 images, 92\%) and high-altitude field mapping (8 images, 8\%).
+
+    \item \textbf{Strong cluster separation}: Only 2.7\% of nearest-neighbor connections crossed category boundaries, indicating robust semantic clustering.
+
+    \item \textbf{Effective similarity search}: Content-based image retrieval correctly identified semantically similar images, enabling intuitive ``find similar'' functionality.
+
+    \item \textbf{Complementary to GPS}: Embedding-based organization captures semantic similarity (image purpose) orthogonal to spatial position captured by GPS metadata.
+\end{enumerate}
+
+These results suggest that pretrained vision-language models offer a practical, zero-configuration approach for organizing large agricultural drone datasets. By reducing manual curation effort, this methodology can accelerate precision agriculture workflows and enable more efficient use of drone survey data.
+
+\todo{Refine conclusions after completing discussion section}

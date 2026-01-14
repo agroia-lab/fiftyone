@@ -1,0 +1,103 @@
+% =============================================================================
+% TECHNICAL DETAILS
+% Status: Reference documentation
+% =============================================================================
+
+\subsection{Software Versions}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Software} & \textbf{Version} \\
+\midrule
+FiftyOne & 1.12.0 \\
+Python & 3.12 \\
+R & 4.3.3 \\
+PyTorch & (system version) \\
+CLIP model & ViT-B/32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Data Paths}
+
+\begin{verbatim}
+research/
++-- paper/
+|   +-- main.tex
+|   +-- sections/
+|   |   +-- abstract.tex
+|   |   +-- introduction.tex
+|   |   +-- objectives.tex
+|   |   +-- methods.tex
+|   |   +-- results.tex
+|   |   +-- discussion.tex
+|   |   +-- conclusions.tex
+|   |   +-- observations.tex
+|   |   +-- technical.tex
+|   +-- figures/
++-- data/
+|   +-- raw/
+|   +-- processed/
+|       +-- santa_ines_data.csv
+|       +-- similarity_neighbors.csv
++-- analysis/
+|   +-- R/
+|   |   +-- analysis.R
+|   |   +-- similarity_analysis.R
+|   +-- python/
++-- notes/
++-- logs/
+\end{verbatim}
+
+\subsection{Key Commands}
+
+\subsubsection{FiftyOne Dataset Operations}
+
+\begin{lstlisting}[language=Python]
+import fiftyone as fo
+import fiftyone.brain as fob
+
+# Load dataset
+dataset = fo.load_dataset("santa_ines_dron")
+
+# Access embeddings
+results = dataset.load_brain_results("clip_viz")
+points = results.points  # Shape: (97, 2)
+
+# Similarity search
+view = dataset.sort_by_similarity(
+    sample_id, k=10, brain_key="clip_similarity"
+)
+
+# Filter by tags
+high_alt = dataset.match_tags("high-altitude")
+closeups = dataset.match_tags("close-up")
+\end{lstlisting}
+
+\subsubsection{Compilation}
+
+\begin{lstlisting}[language=bash]
+# Compile LaTeX document
+cd research/paper
+pdflatex main.tex
+pdflatex main.tex  # Run twice for TOC
+
+# Or use latexmk for automatic compilation
+latexmk -pdf main.tex
+\end{lstlisting}
+
+\subsection{FiftyOne Brain Keys}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Brain Key} & \textbf{Type} & \textbf{Description} \\
+\midrule
+clip\_viz & visualization & CLIP embeddings + UMAP 2D projection \\
+clip\_similarity & similarity & Similarity index for retrieval \\
+\bottomrule
+\end{tabular}
+\end{table}

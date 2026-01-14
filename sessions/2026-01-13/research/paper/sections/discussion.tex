@@ -1,0 +1,84 @@
+% =============================================================================
+% DISCUSSION
+% Status: DRAFT - Initial interpretation, needs expansion
+% =============================================================================
+
+\subsection{Interpretation of Results}
+
+\subsubsection{Semantic Clustering Without Domain-Specific Training}
+
+The most significant finding is that CLIP embeddings---trained on general web images, not agricultural data---successfully separated drone images by their functional purpose (inspection vs. mapping). This suggests that:
+
+\begin{enumerate}
+    \item Pretrained vision-language models capture transferable visual concepts
+    \item Altitude-related visual features (scale, detail level, field-of-view) are well-represented in general visual embeddings
+    \item Domain-specific fine-tuning may not be necessary for basic organizational tasks
+\end{enumerate}
+
+\observation{CLIP's training on diverse web data appears to include sufficient exposure to aerial/satellite imagery to enable meaningful agricultural drone image understanding}
+
+\subsubsection{Embedding Space vs. Geographic Space}
+
+A key advantage of embedding-based organization over GPS metadata is the capture of \emph{semantic} rather than \emph{spatial} similarity. Images taken at different GPS locations but serving the same purpose (e.g., all high-altitude mapping shots) cluster together in embedding space, whereas GPS coordinates would scatter them across the field.
+
+\todo{Add quantitative comparison: GPS clustering vs. embedding clustering}
+
+\subsubsection{Cluster Cohesion Asymmetry}
+
+The high-altitude cluster showed higher cohesion (lower mean neighbor distance) than the close-up cluster. This may reflect:
+
+\begin{itemize}
+    \item \textbf{Homogeneity of overview images}: High-altitude shots capture similar field patterns regardless of position
+    \item \textbf{Diversity of inspection targets}: Close-up images may show varied crop conditions, growth stages, or inspection targets
+\end{itemize}
+
+\finding{Cluster cohesion differences may indicate semantic diversity within categories---useful for quality assessment or anomaly detection}
+
+\subsection{Practical Implications}
+
+\subsubsection{Automated Dataset Curation}
+
+The demonstrated clustering capability enables automated organization of drone survey data:
+
+\begin{itemize}
+    \item Separate mapping images from inspection images automatically
+    \item Identify outliers or unusual images for review
+    \item Filter large datasets to specific image types without manual labeling
+\end{itemize}
+
+\subsubsection{Content-Based Image Retrieval}
+
+Similarity search based on embeddings provides intuitive ``find similar'' functionality:
+
+\begin{itemize}
+    \item Query by example: find all images similar to a selected sample
+    \item Batch processing: process only images of a specific type
+    \item Quality control: identify near-duplicates or redundant coverage
+\end{itemize}
+
+\subsection{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Sample size}: Analysis based on 97 images from a single field; generalization requires validation on larger, more diverse datasets
+
+    \item \textbf{Binary clustering}: Current analysis identified only two categories; finer-grained distinctions (e.g., crop health categories) were not explored
+
+    \item \textbf{UMAP projection}: 2D visualization may lose information present in the full 512D embedding space
+
+    \item \textbf{Model selection}: Only CLIP ViT-B/32 was evaluated; other models may perform differently
+\end{enumerate}
+
+\todo{Address limitations in future work section}
+
+\subsection{Comparison with Related Work}
+
+\todo{Add comparison with existing drone image organization methods, GPS-based clustering, traditional image classification approaches}
+
+\subsection{Future Directions}
+
+\begin{enumerate}
+    \item \textbf{Multi-field validation}: Apply methodology to datasets from multiple agricultural sites
+    \item \textbf{Fine-grained classification}: Explore embeddings for crop health assessment, disease detection
+    \item \textbf{Temporal analysis}: Track embedding changes across growing season
+    \item \textbf{Model comparison}: Evaluate agricultural-specific models vs. general pretrained models
+\end{enumerate}

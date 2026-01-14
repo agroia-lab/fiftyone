@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+
+% =============================================================================
+% PACKAGES
+% =============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\graphicspath{{figures/}}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% References and links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Bibliography
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+% Code listings (for methods documentation)
+\usepackage{listings}
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    language=Python
+}
+
+% Colors for highlighting
+\usepackage{xcolor}
+\definecolor{observation}{RGB}{39,174,96}
+\definecolor{finding}{RGB}{41,128,185}
+\definecolor{todo}{RGB}{231,76,60}
+
+% Custom commands for annotations
+\newcommand{\observation}[1]{\textcolor{observation}{\textbf{[OBS:} #1\textbf{]}}}
+\newcommand{\finding}[1]{\textcolor{finding}{\textbf{[FIND:} #1\textbf{]}}}
+\newcommand{\todo}[1]{\textcolor{todo}{\textbf{[TODO:} #1\textbf{]}}}
+
+% =============================================================================
+% DOCUMENT INFO
+% =============================================================================
+\title{Semantic Clustering of Agricultural Drone Imagery\\Using Vision-Language Embeddings}
+\author{Research Notes - Draft v0.1}
+\date{January 2026 \\ \small Last updated: \today}
+
+% =============================================================================
+% DOCUMENT
+% =============================================================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% -----------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/introduction}
+
+% -----------------------------------------------------------------------------
+\section{Objectives}
+\label{sec:objectives}
+\input{sections/objectives}
+
+% -----------------------------------------------------------------------------
+\section{Materials and Methods}
+\label{sec:methods}
+\input{sections/methods}
+
+% -----------------------------------------------------------------------------
+\section{Results}
+\label{sec:results}
+\input{sections/results}
+
+% -----------------------------------------------------------------------------
+\section{Discussion}
+\label{sec:discussion}
+\input{sections/discussion}
+
+% -----------------------------------------------------------------------------
+\section{Conclusions}
+\label{sec:conclusions}
+\input{sections/conclusions}
+
+% -----------------------------------------------------------------------------
+% APPENDICES
+\appendix
+\section{Observation Log}
+\label{app:observations}
+\input{sections/observations}
+
+\section{Technical Details}
+\label{app:technical}
+\input{sections/technical}
+
+% -----------------------------------------------------------------------------
+% BIBLIOGRAPHY
+% \bibliography{references}
+
+\end{document}
