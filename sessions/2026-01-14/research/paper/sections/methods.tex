@@ -7,7 +7,7 @@
 
 \subsubsection{Field Sites}
 
-Four agricultural field sites in central Chile were surveyed:
+Five agricultural field sites in central Chile were surveyed:
 
 \begin{table}[H]
 \centering
@@ -21,6 +21,7 @@ Santa Ines & -34.4746, -70.9516 & Tomato & January 2026 \\
 La Capilla & -34.4722, -70.9337 & Tomato & January 2026 \\
 Apalta & -34.4743, -70.9531 & Tomato & January 2026 \\
 Camarico & -34.3580, -70.8918 & Tomato & January 2026 \\
+Lo Castillo & -34.1627, -70.6884 & Tomato & January 2026 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -70,10 +71,11 @@ Drone imagery characteristics:
 \toprule
 \textbf{Site} & \textbf{Images} & \textbf{Format} & \textbf{Device} & \textbf{GPS Coverage} \\
 \midrule
-Santa Ines & 635 & JPEG & Android & 100\% (635/635) \\
+Santa Ines & 1,325 & JPEG+HEIC & Mixed & 100\% (1,325/1,325) \\
 La Capilla & 822 & JPEG & Android & 97\% (799/822) \\
 Apalta & 961 & HEIC & iPhone XR & 99.9\% (960/961) \\
 Camarico & 33 & JPEG & Android & 82\% (27/33) \\
+Lo Castillo & 1,521 & JPEG+HEIC & Mixed & 100\% (1,521/1,521) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -87,14 +89,14 @@ Ground camera imagery characteristics:
     \item \textbf{Perspective}: Ground-level, horizontal view of crop rows and individual plants
 \end{itemize}
 
-\finding{Ground camera datasets are significantly larger (635-961 images) than drone datasets (97-111 images), reflecting the different data collection workflows---walking through fields vs. programmed flight paths}
+\finding{Ground camera datasets are significantly larger (33--1,521 images) than drone datasets (97--111 images), reflecting the different data collection workflows---walking through fields vs. programmed flight paths}
 
 \subsection{Software Environment}
 
 \subsubsection{Dataset Management}
 FiftyOne v1.12.0 was used for dataset management, embedding computation, and visualization. FiftyOne provides:
 \begin{itemize}
-    \item Efficient handling of large image datasets (2000+ images across all sites)
+    \item Efficient handling of large image datasets (4,870 images across all sites)
     \item Built-in integration with embedding models
     \item Interactive visualization tools
     \item Similarity search functionality
