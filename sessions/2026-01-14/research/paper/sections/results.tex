@@ -206,12 +206,13 @@ Ground-level imagery captured with mobile phones (``Celular'') provides a comple
 \toprule
 \textbf{Site} & \textbf{Images} & \textbf{Format} & \textbf{With GPS} & \textbf{Device} \\
 \midrule
-Santa Ines (Ground) & 635 & JPEG & 635 (100\%) & Android \\
+Santa Ines (Ground) & 1,325 & JPEG+HEIC & 1,325 (100\%) & Android \\
 La Capilla (Ground) & 822 & JPEG & 799 (97\%) & Android \\
 Apalta & 961 & HEIC & 960 (99.9\%) & iPhone XR \\
 Camarico & 33 & JPEG & 27 (82\%) & Android \\
+Lo Castillo & 1,521 & JPEG+HEIC & 1,521 (100\%) & Mixed \\
 \midrule
-\textbf{Total} & \textbf{2,451} & & \textbf{2,421 (98.8\%)} & \\
+\textbf{Total} & \textbf{4,662} & & \textbf{4,632 (99.4\%)} & \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -228,25 +229,26 @@ K-means clustering was applied to the UMAP-projected embeddings to identify natu
 \toprule
 \textbf{Site} & \textbf{Images} & \textbf{Optimal k} & \textbf{Silhouette} & \textbf{Inter-cluster Dist} \\
 \midrule
-Santa Ines (Ground) & 635 & 2 & \textbf{0.795} & 12.95 \\
+Santa Ines (Ground) & 1,325 & 2 & 0.416 & 4.82 \\
 La Capilla (Ground) & 822 & 2 & 0.472 & 3.50 \\
 Apalta & 961 & 4 & 0.415 & 3.27 \\
 Camarico & 33 & 2 & 0.461 & 2.35 \\
+Lo Castillo & 1,521 & 2 & \textbf{0.537} & 5.38 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\finding{Santa Ines ground camera shows exceptionally strong clustering (silhouette=0.795), the highest of all datasets analyzed---including drone imagery}
+\finding{Lo Castillo shows the strongest clustering among ground datasets (silhouette=0.537), followed by La Capilla (0.472). Lo Castillo also has the lowest cross-cluster rate (0.1\%) despite combining JPEG and HEIC formats}
 
 % ----------------------------------------------------------------------------
 \subsubsection{Ground Site 1: Santa Ines (Celular)}
 
-Figure~\ref{fig:sic_combined} presents the combined analysis of Santa Ines ground camera imagery, showing remarkable cluster separation driven by survey date differences.
+Santa Ines ground camera is the largest ground dataset with 1,325 images combining both JPEG (635) and HEIC (690) formats. Figure~\ref{fig:sic_combined} presents the combined analysis.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{sic_combined_analysis.png}
-    \caption{Combined analysis of Santa Ines ground camera imagery (635 images). \textbf{(A)} GPS coordinates showing field coverage; \textbf{(B)} UMAP projection revealing two perfectly separated clusters; \textbf{(C)} Cluster distribution; \textbf{(D)} Dataset metrics showing 0\% cross-cluster edges.}
+    \caption{Combined analysis of Santa Ines ground camera imagery (1,325 images: 635 JPEG + 690 HEIC). \textbf{(A)} GPS coordinates showing field coverage; \textbf{(B)} UMAP projection revealing two clusters; \textbf{(C)} Cluster distribution by file format; \textbf{(D)} Dataset metrics showing 0.8\% cross-cluster edges.}
     \label{fig:sic_combined}
 \end{figure}
 
@@ -334,6 +336,78 @@ Camarico represents the smallest dataset (33 images), providing a test of method
 \finding{Even with only 33 images, Camarico produced interpretable clustering (silhouette=0.461, 6.1\% cross-cluster edges), demonstrating methodology applicability to minimal datasets}
 
 % ----------------------------------------------------------------------------
+\subsubsection{Ground Site 5: Lo Castillo}
+
+Lo Castillo represents the largest ground camera dataset (1,521 images), combining both JPEG (1,215) and HEIC (306) formats. This site provides a comprehensive test of the methodology on mixed-format, large-scale ground imagery.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{loc_combined_analysis.png}
+    \caption{Combined analysis of Lo Castillo ground camera imagery (1,521 images: 1,215 JPEG + 306 HEIC). \textbf{(A)} GPS coordinates showing field coverage with 100\% GPS extraction success; \textbf{(B)} UMAP projection revealing two clusters with strong separation; \textbf{(C)} Format distribution by cluster showing both JPEG and HEIC images present in each cluster; \textbf{(D)} Dataset metrics showing silhouette=0.537 and only 0.1\% cross-cluster edges.}
+    \label{fig:loc_combined}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{loc_similarity_network.png}
+        \caption{Similarity network (0.1\% cross-cluster)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{loc_cluster_cohesion.png}
+        \caption{Cluster cohesion comparison}
+    \end{subfigure}
+    \caption{Lo Castillo ground camera analysis: (a) k-NN similarity network showing near-perfect cluster separation with only 4 cross-cluster edges out of 4,563 total; (b) Cluster cohesion showing Cluster 1 is tighter despite having fewer samples.}
+    \label{fig:loc_analysis}
+\end{figure}
+
+\subsubsection{Lo Castillo Cluster Characteristics}
+
+\begin{table}[H]
+\centering
+\caption{Lo Castillo cluster statistics}
+\label{tab:loc_clusters}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Category} & \textbf{Count} & \textbf{\%} & \textbf{UMAP X} & \textbf{UMAP Y} \\
+\midrule
+Cluster 0 (Primary) & 1,186 & 78.0\% & $7.47 \pm 1.42$ & $7.14 \pm 1.68$ \\
+Cluster 1 (Secondary) & 335 & 22.0\% & $2.26 \pm 1.00$ & $5.79 \pm 0.81$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Inter-cluster distance}: 5.38 UMAP units
+    \item \textbf{Cross-cluster edges}: 4/4,563 (\textbf{0.1\%})---lowest among all ground camera datasets
+    \item \textbf{Silhouette score}: 0.537---\textbf{highest among all ground camera datasets}
+    \item \textbf{GPS coverage}: 100\% (all 1,521 images have valid GPS coordinates)
+\end{itemize}
+
+\finding{Lo Castillo achieves the best clustering performance among all ground camera datasets, with the highest silhouette score (0.537) and lowest cross-cluster rate (0.1\%), despite being the largest dataset (1,521 images)}
+
+\subsubsection{Multi-Format Analysis}
+
+Unlike other ground camera datasets which used a single file format, Lo Castillo combines images from multiple devices:
+
+\begin{table}[H]
+\centering
+\caption{Lo Castillo format distribution by cluster}
+\label{tab:loc_format}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Format} & \textbf{Total} & \textbf{Cluster 0} & \textbf{Cluster 1} \\
+\midrule
+JPEG & 1,215 (79.9\%) & 952 (80.3\%) & 263 (78.5\%) \\
+HEIC & 306 (20.1\%) & 234 (19.7\%) & 72 (21.5\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\observation{Both file formats are distributed proportionally across clusters, indicating that CLIP embeddings cluster by visual content rather than file format or device characteristics}
+
+% ----------------------------------------------------------------------------
 \subsubsection{Ground Camera: Network Analysis Summary}
 
 \begin{table}[H]
@@ -344,27 +418,30 @@ Camarico represents the smallest dataset (33 images), providing a test of method
 \toprule
 \textbf{Site} & \textbf{Within-cluster} & \textbf{Cross-cluster} & \textbf{Cross \%} & \textbf{Separation} \\
 \midrule
-Santa Ines (Ground) & 1,905 & 0 & \textbf{0.0\%} & Perfect \\
+Santa Ines (Ground) & 3,942 & 33 & 0.8\% & Strong \\
 La Capilla (Ground) & 2,428 & 38 & 1.5\% & Strong \\
 Apalta & 2,824 & 59 & 2.0\% & Strong \\
 Camarico & 93 & 6 & 6.1\% & Moderate \\
+Lo Castillo & 4,559 & 4 & \textbf{0.1\%} & Very Strong \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\finding{Santa Ines ground camera achieved perfect cluster separation (0\% cross-cluster edges)---matching La Capilla drone's perfect separation and demonstrating that strong clustering is possible with both capture modalities}
+\finding{All ground camera datasets achieved strong cluster separation ($<$2\% cross-cluster edges), with Lo Castillo achieving the lowest cross-cluster rate (0.1\%) and highest silhouette score (0.537) despite being the largest dataset (1,521 images)}
 
 % ----------------------------------------------------------------------------
 \subsubsection{Temporal Clustering Discovery}
 
-A key finding emerged from the Santa Ines ground camera analysis: the two clusters correspond almost perfectly to \textbf{different survey dates}:
+Analysis of the JPEG subset (635 images with extractable timestamps) revealed temporal patterns in the Santa Ines ground camera data:
 
 \begin{itemize}
-    \item \textbf{Cluster 1} (527 images, 83\%): January 8, 2026 survey
-    \item \textbf{Cluster 2} (108 images, 17\%): January 6, 2026 survey
+    \item \textbf{January 8, 2026}: 526 images (83\%)
+    \item \textbf{January 6, 2026}: 109 images (17\%)
 \end{itemize}
 
-\observation{CLIP embeddings automatically detected visual differences between survey dates---likely due to changes in lighting conditions, time of day, or subtle crop development over the 2-day interval}
+The 690 HEIC images (iPhone format) show different naming conventions, but the combined JPEG+HEIC dataset maintains strong cluster separation (0.8\% cross-cluster edges).
+
+\observation{CLIP embeddings detect visual differences that may correlate with survey dates, lighting conditions, or subtle environmental changes---useful for quality control in multi-day surveys}
 
 This temporal sensitivity demonstrates that vision-language embeddings can serve as an implicit indicator of survey conditions, potentially useful for:
 \begin{itemize}
@@ -384,14 +461,14 @@ This temporal sensitivity demonstrates that vision-language embeddings can serve
 \textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{Silhouette} & \textbf{Inter-dist} \\
 \midrule
 Santa Ines & Drone & 97 & --- & 3.56 \\
-Santa Ines & Ground & 635 & 0.795 & 12.95 \\
+Santa Ines & Ground & 1,325 & 0.416 & 4.82 \\
 La Capilla & Drone & 111 & --- & 12.93 \\
 La Capilla & Ground & 822 & 0.472 & 3.50 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-An interesting pattern emerges: Santa Ines ground (12.95) shows similar cluster separation to La Capilla drone (12.93), while La Capilla ground (3.50) resembles Santa Ines drone (3.56). This suggests that cluster separation magnitude is driven by the underlying visual diversity in each dataset rather than capture modality.
+Santa Ines and La Capilla ground datasets show similar inter-cluster distances (4.82 and 3.50), while their drone datasets show different patterns (3.56 vs 12.93). This suggests that ground camera datasets capture more uniform visual content (plant-level views), while drone datasets vary based on flight altitude patterns.
 
 \subsubsection{Key Characteristics}
 
@@ -400,12 +477,12 @@ Ground camera imagery differs fundamentally from drone imagery:
 \begin{itemize}
     \item \textbf{Perspective}: Horizontal view at plant level vs. top-down aerial view
     \item \textbf{Content}: Individual plants, leaves, fruits, and row structure visible from ground level
-    \item \textbf{Scale}: Much larger datasets (635--961 images per site vs. 97--111 for drone)
+    \item \textbf{Scale}: Much larger datasets (33--1,521 images per site vs. 97--111 for drone)
     \item \textbf{Collection method}: Walking through fields vs. programmed flight paths
-    \item \textbf{Temporal sensitivity}: Ground camera embeddings detected multi-day survey differences
+    \item \textbf{Multi-format support}: Successfully processed both JPEG (Android) and HEIC (iPhone) formats
 \end{itemize}
 
-\finding{Ground camera datasets contain 12$\times$ more images on average than drone datasets, reflecting the intensive ground-truthing effort typical in precision agriculture research}
+\finding{Ground camera datasets contain up to 15$\times$ more images than drone datasets (e.g., Lo Castillo with 1,521 images), reflecting the intensive ground-truthing effort typical in precision agriculture research}
 
 \subsubsection{GPS Coverage}
 
@@ -439,18 +516,19 @@ For each ground camera dataset, the following files were generated:
 \textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{GPS Coverage} & \textbf{FiftyOne Dataset} \\
 \midrule
 Santa Ines & Drone & 97 & 100\% & santa\_ines\_dron \\
-Santa Ines & Ground & 635 & 100\% & santa\_ines\_celular \\
+Santa Ines & Ground & 1,325 & 100\% & santa\_ines\_celular \\
 La Capilla & Drone & 111 & 100\% & la\_capilla\_dron \\
 La Capilla & Ground & 822 & 97\% & la\_capilla\_celular \\
 Apalta & Ground & 961 & 99.9\% & apalta \\
 Camarico & Ground & 33 & 82\% & camarico \\
+Lo Castillo & Ground & 1,521 & 100\% & lo\_castillo \\
 \midrule
-\multicolumn{2}{l}{\textbf{Total}} & \textbf{2,659} & \textbf{98.7\%} & \\
+\multicolumn{2}{l}{\textbf{Total}} & \textbf{4,870} & \textbf{99.4\%} & \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\finding{The combined multi-modal dataset comprises 2,659 agricultural images across 4 sites and 2 capture modalities, all processed with identical CLIP embedding methodology}
+\finding{The combined multi-modal dataset comprises 4,870 agricultural images across 5 sites and 2 capture modalities, all processed with identical CLIP embedding methodology}
 
 \subsubsection{Data Availability by Site and Modality}
 
@@ -464,23 +542,25 @@ An important observation is that not all sites have both capture modalities avai
 \toprule
 \textbf{Site} & \textbf{Drone} & \textbf{Ground} & \textbf{Drone Images} & \textbf{Ground Images} & \textbf{Ratio (G:D)} \\
 \midrule
-Santa Ines & \checkmark & \checkmark & 97 & 635 & 6.5:1 \\
+Santa Ines & \checkmark & \checkmark & 97 & 1,325 & 13.7:1 \\
 La Capilla & \checkmark & \checkmark & 111 & 822 & 7.4:1 \\
 Apalta & --- & \checkmark & 0 & 961 & Ground only \\
 Camarico & --- & \checkmark & 0 & 33 & Ground only \\
+Lo Castillo & --- & \checkmark & 0 & 1,521 & Ground only \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\observation{Two sites (Santa Ines and La Capilla) have complete multi-modal coverage with both drone and ground camera imagery, while two sites (Apalta and Camarico) have only ground camera data available}
+\observation{Two sites (Santa Ines and La Capilla) have complete multi-modal coverage with both drone and ground camera imagery, while three sites (Apalta, Camarico, and Lo Castillo) have only ground camera data available}
 
 Key findings on data availability:
 
 \begin{itemize}
     \item \textbf{Multi-modal sites}: Santa Ines and La Capilla have both drone and ground camera imagery, enabling direct comparison of embedding behavior across capture modalities
-    \item \textbf{Ground-only sites}: Apalta and Camarico were surveyed only with ground cameras, limiting analysis to single-modality embedding patterns
-    \item \textbf{Ground camera ratio}: For sites with both modalities, ground camera images outnumber drone images by approximately 6.5--7.4$\times$
-    \item \textbf{Smallest dataset}: Camarico has the smallest dataset (33 images), significantly smaller than other ground camera datasets (635--961 images)
+    \item \textbf{Ground-only sites}: Apalta, Camarico, and Lo Castillo were surveyed only with ground cameras, limiting analysis to single-modality embedding patterns
+    \item \textbf{Ground camera ratio}: For sites with both modalities, ground camera images outnumber drone images by 7--14$\times$
+    \item \textbf{Largest dataset}: Lo Castillo has the largest ground camera dataset (1,521 images), with the best clustering performance (silhouette=0.537)
+    \item \textbf{Smallest dataset}: Camarico has the smallest dataset (33 images), significantly smaller than other ground camera datasets (822--1,521 images)
 \end{itemize}
 
 \finding{Camarico represents a minimal-data scenario with only 33 ground camera images and no drone coverage---useful for testing methodology robustness on limited data but insufficient for detailed cluster analysis}
@@ -498,7 +578,7 @@ For the two sites with complete multi-modal coverage, we can directly compare em
 \textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{Clusters} & \textbf{Inter-dist} & \textbf{Primary Driver} \\
 \midrule
 Santa Ines & Drone & 97 & 2 & 3.56 & Altitude \\
-Santa Ines & Ground & 635 & 2 & 12.95 & Temporal (date) \\
+Santa Ines & Ground & 1,325 & 2 & 4.82 & Mixed format \\
 \midrule
 La Capilla & Drone & 111 & 2 & 12.93 & Altitude \\
 La Capilla & Ground & 822 & 2 & 3.50 & Visual content \\
@@ -506,4 +586,4 @@ La Capilla & Ground & 822 & 2 & 3.50 & Visual content \\
 \end{tabular}
 \end{table}
 
-\observation{Interestingly, the sites show opposite patterns: Santa Ines has stronger cluster separation in ground imagery (temporal), while La Capilla has stronger separation in drone imagery (altitude). This suggests that cluster separation magnitude depends on the underlying visual diversity in each dataset rather than the capture modality itself}
+\observation{Ground camera datasets show consistent inter-cluster distances (3.50--4.82), while drone datasets vary more widely (3.56--12.93). This suggests ground-level imagery captures more uniform visual content regardless of site, while aerial imagery varies based on flight patterns and altitude choices}
