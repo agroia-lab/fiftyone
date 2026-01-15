@@ -1,9 +1,9 @@
 % =============================================================================
 % CONCLUSIONS
-% Status: Updated for drone + ground camera analysis v0.4
+% Status: Updated for drone + ground camera analysis v0.6
 % =============================================================================
 
-This multi-site, multi-modal study demonstrated that pretrained vision-language embeddings (CLIP) effectively organize agricultural imagery by semantic content without domain-specific training. Analysis of 2,659 images across four Chilean field sites and two capture modalities revealed:
+This multi-site, multi-modal study demonstrated that pretrained vision-language embeddings (CLIP) effectively organize agricultural imagery by semantic content without domain-specific training. Analysis of 3,349 images across four Chilean field sites and two capture modalities revealed:
 
 \begin{enumerate}
     \item \textbf{Consistent automatic clustering}: CLIP embeddings with UMAP projection separated images into semantically meaningful clusters across both drone and ground camera datasets.
@@ -14,9 +14,9 @@ This multi-site, multi-modal study demonstrated that pretrained vision-language 
         \item La Capilla: 12.93 UMAP units inter-cluster distance, \textbf{0\% cross-category edges}
     \end{itemize}
 
-    \item \textbf{Scalable ground camera processing}: Successfully processed 2,451 ground-level images with 98.8\% GPS coverage, including iPhone HEIC format support.
+    \item \textbf{Scalable ground camera processing}: Successfully processed 3,141 ground-level images with 99.0\% GPS coverage, including mixed JPEG and HEIC format support.
 
-    \item \textbf{Temporal sensitivity discovered}: Santa Ines ground camera achieved the highest clustering score (silhouette=0.795) of all datasets, with clusters corresponding to different survey dates (Jan 6 vs Jan 8). This demonstrates CLIP's ability to detect temporal/environmental changes.
+    \item \textbf{Strong ground camera clustering}: All ground datasets achieved $<$2\% cross-cluster edges, with Santa Ines (1,325 images) showing just 0.8\% cross-cluster connections.
 
     \item \textbf{Spatial-semantic decoupling}: Embedding-based organization captures semantic similarity (image content/purpose) orthogonal to spatial position across both modalities.
 
@@ -31,9 +31,9 @@ This multi-site, multi-modal study demonstrated that pretrained vision-language 
 \textbf{Modality} & \textbf{Images} & \textbf{Sites} \\
 \midrule
 Drone (Aerial) & 208 & 2 \\
-Ground Camera (Celular) & 2,451 & 4 \\
+Ground Camera (Celular) & 3,141 & 4 \\
 \midrule
-\textbf{Total} & \textbf{2,659} & \textbf{4} \\
+\textbf{Total} & \textbf{3,349} & \textbf{4} \\
 \bottomrule
 \end{tabular}
 \end{center}

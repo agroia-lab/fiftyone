@@ -83,8 +83,61 @@ Based on embedding analysis, images were automatically tagged:
 
 **Key finding**: CLIP embeddings successfully separated images by altitude/scale, not just GPS position. This enables automatic categorization of drone survey data.
 
+## Session Update - January 14, 2026
+
+### Tasks Completed
+
+#### 1. GPS Extraction & Satellite Map Integration
+
+- Extracted GPS coordinates from drone image EXIF metadata
+- Integrated Google Maps Static API for satellite imagery background
+- Created visualization comparing GPS locations vs CLIP embedding space
+
+**GPS Range**:
+- Latitude: -34.474854 to -34.474401
+- Longitude: -70.952951 to -70.950338
+
+#### 2. Combined Analysis Figure
+
+Created comprehensive 4-panel figure (`combined_analysis.png`):
+- Panel A: GPS coordinates on satellite imagery
+- Panel B: CLIP embedding space (UMAP projection)
+- Panel C: Representative close-up images (4 samples)
+- Panel D: Representative high-altitude images (4 samples)
+
+#### 3. Research Paper Updates (v0.2)
+
+Updated LaTeX paper with:
+- New combined analysis figure (Figure 1)
+- Detailed interpretation of GPS vs embedding comparison
+- Visual characteristics breakdown for each cluster
+- Key findings on semantic-spatial decoupling
+
+**Paper location**: `research/paper/main.pdf` (17 pages)
+
+### Files Generated (Jan 14)
+
+- `santa_ines_with_gps.csv` - Dataset with GPS coordinates
+- `gps_satellite_map.py` - GPS extraction script
+- `satellite_map.py` - Satellite visualization script
+- `cluster_samples.py` - Representative image selection
+- `combined_figure.py` - Combined 4-panel figure generator
+- `satellite_gps_vs_embedding.png` - GPS vs embedding comparison
+- `satellite_gps_only.png` - Satellite map with GPS points
+- `cluster_representative_images.png` - Sample images by cluster
+- `combined_analysis.png` - Final combined figure for paper
+
+### Key Findings
+
+1. **Spatial-Semantic Decoupling**: GPS positions show systematic flight pattern, but CLIP embeddings cluster by visual content regardless of location
+
+2. **Visual Distinction**: Close-up images show plant detail/texture; high-altitude images show geometric row patterns
+
+3. **Cluster Cohesion**: High-altitude cluster is 35% tighter (lower neighbor distance) despite fewer samples
+
 ## Next Steps
 
 - Compute similarity index for image search functionality
 - Load additional datasets from other field locations for comparison
 - Use tags to filter views for specific analysis tasks
+- Extend analysis to temporal changes (multi-date surveys)

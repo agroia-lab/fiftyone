@@ -5,7 +5,7 @@
 
 \subsection{Combined Spatial and Visual Analysis}
 
-Figure~\ref{fig:combined} presents an integrated view of the Santa Ines drone survey analysis, showing the relationship between physical GPS locations and visual embedding clustering.
+Figure~\ref{fig:combined} presents an integrated view of the Santa Ines drone survey analysis, demonstrating the fundamental difference between physical GPS locations and visual semantic clustering.
 
 \begin{figure}[H]
     \centering
@@ -14,7 +14,35 @@ Figure~\ref{fig:combined} presents an integrated view of the Santa Ines drone su
     \label{fig:combined}
 \end{figure}
 
-\observation{Physical GPS locations show a systematic flight pattern, while CLIP embeddings cluster images by visual content (altitude/scale) rather than geographic proximity}
+\subsubsection{GPS vs Visual Embedding: Key Differences}
+
+Panel A reveals the physical flight pattern over the Santa Ines vineyard. The drone followed systematic transects across the crop rows, with close-up images (green markers) distributed along parallel flight lines and high-altitude overview images (red markers) captured at strategic positions across the field. Geographically, both image types are \textbf{spatially intermixed}---high-altitude shots were taken from various positions throughout the survey area.
+
+In contrast, Panel B shows the CLIP embedding space where images cluster by \textbf{visual content rather than geographic location}. Despite being captured from scattered GPS positions, all high-altitude images form a tight cluster in the lower-right corner of the embedding space, clearly separated from the close-up images. This demonstrates that vision-language models organize images by semantic similarity (what the image depicts) rather than spatial proximity (where it was captured).
+
+\subsubsection{Visual Characteristics of Each Cluster}
+
+Panels C and D provide visual evidence for why CLIP separates these image categories:
+
+\textbf{Close-up images (Panel C)} are characterized by:
+\begin{itemize}
+    \item High detail of individual vine plants and foliage
+    \item Visible leaf texture, color variations, and plant structure
+    \item Limited field-of-view showing 1-3 plant rows
+    \item Rich color palette dominated by greens and earth tones
+\end{itemize}
+
+\textbf{High-altitude images (Panel D)} exhibit distinct visual patterns:
+\begin{itemize}
+    \item Geometric vineyard row patterns visible from above
+    \item Uniform texture showing repetitive agricultural structure
+    \item Wide field-of-view capturing dozens of rows
+    \item Reduced color variation with dominant green/brown striping
+\end{itemize}
+
+\finding{CLIP embeddings successfully capture the semantic distinction between ``detailed crop inspection'' and ``field overview'' image types, enabling automatic categorization based purely on visual content}
+
+\observation{This spatial-semantic decoupling has practical implications: images can be organized by content type regardless of capture location, enabling more intuitive dataset browsing and quality control workflows}
 
 \subsection{Embedding Space Visualization}
 

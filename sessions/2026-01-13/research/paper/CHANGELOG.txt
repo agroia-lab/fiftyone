@@ -1,0 +1,127 @@
+================================================================================
+CHANGELOG - Semantic Clustering of Agricultural Drone Imagery
+================================================================================
+
+Version 0.2.5 - January 14, 2026
+--------------------------------
+AGROIA RESEARCH PROMPT (Book Format):
+- Restructured as LaTeX BOOK with parts and chapters
+  * 6 Parts: Foundations, Architecture, Modules, Evaluation, Evolution, Appendices
+  * 18 Chapters covering all project aspects
+  * 4 Appendices (observations, technical, schemas, glossary)
+- Chapter-Paper mapping system
+  * Ch.14 RAG Paradox → Paper 1
+  * Ch.05 Data Layer → Paper 2 (Extraction)
+  * Ch.10-12 Routing/Agents → Paper 3 (Future)
+  * Ch.13 Benchmark → Paper 4 (Eval methodology)
+- Full chapter templates with:
+  * \chaptersummary{} boxes
+  * \paperref{title}{status}{target} for paper links
+  * \obs{date}{text} for observations
+  * \adr{id}{text} for decisions
+- Living appendix system (AppA: observations log)
+- Chapter update guidelines by trigger
+
+
+Version 0.2.4 - January 14, 2026
+--------------------------------
+AGROIA RESEARCH PROMPT (Complete):
+- Added LaTeX documentation structure (Section 7)
+  * Full main.tex template with version control
+  * 12 section templates (executive summary → appendix)
+  * Observations log (08) - living append-only document
+  * Decisions log (09) - ADR tracking
+- PDF version control system
+  * CHANGELOG.txt for PDF versions
+  * Versioned releases archive
+  * Automated compilation script
+- Updated session workflow (Section 8)
+  * Document-as-you-go guidelines
+  * PDF compilation at session end
+  * Version bump and archive procedure
+
+
+Version 0.2.3 - January 14, 2026
+--------------------------------
+AGROIA RESEARCH PROMPT (Revised):
+- Refocused on project documentation & change logging (not paper writing)
+- Project description templates (identity, architecture, capabilities)
+- Session log entry template for daily work tracking
+- Master CHANGELOG format (semantic versioning)
+- Architecture evolution tracking document
+- Metrics history CSV for longitudinal tracking
+- CLAUDE.md update guidelines
+- Session workflow (start → during → end)
+- Quick reference commands
+
+
+Version 0.2.2 - January 14, 2026
+--------------------------------
+REUSABLE PROMPTS:
+- Created RESEARCH_WORKFLOW_PROMPT.md - Full workflow documentation
+- Created CLAUDE_RESEARCH_PROMPT.md - Quick start prompt for new projects
+- Added code templates with configurable placeholders
+- Added example usage for different project types
+
+DOCUMENTATION:
+- Updated CLAUDE.md with links to reusable prompts
+
+
+Version 0.2.1 - January 14, 2026
+--------------------------------
+TECHNICAL APPENDIX:
+- Added GPS extraction procedure and Python code
+- Added satellite map integration with Google Maps API
+- Added coordinate projection (Web Mercator) documentation
+- Added analysis scripts reference tables (Python & R)
+
+DOCUMENTATION:
+- Updated CLAUDE.md with research workflow section
+- Updated session_summary.md with Jan 14 work
+
+
+Version 0.2 - January 14, 2026
+------------------------------
+NEW FEATURES:
+- Added combined analysis figure (Figure 1) with 4 panels:
+  * Panel A: GPS coordinates on Google satellite imagery
+  * Panel B: CLIP embedding space visualization
+  * Panel C: Representative close-up images (4 samples)
+  * Panel D: Representative high-altitude images (4 samples)
+
+NEW CONTENT:
+- Section "Combined Spatial and Visual Analysis" expanded with:
+  * GPS vs Visual Embedding comparison and interpretation
+  * Visual characteristics breakdown for each cluster
+  * Key findings on semantic-spatial decoupling
+
+FIGURES:
+- Added: combined_analysis.png (satellite map + embeddings + sample images)
+
+
+Version 0.1 - January 13, 2026
+------------------------------
+INITIAL DRAFT:
+- Abstract and introduction
+- Objectives section
+- Materials and Methods (CLIP, UMAP, FiftyOne workflow)
+- Results:
+  * Embedding space visualization
+  * Cluster characteristics table
+  * Similarity network analysis
+  * Cluster cohesion analysis
+  * Image size analysis
+  * Similarity search validation
+- Discussion and conclusions
+- Technical appendix
+
+FIGURES:
+- r_embeddings_plot.png
+- r_similarity_network.png
+- r_cluster_cohesion.png
+- r_size_analysis.png
+- r_distance_distribution.png
+- r_combined_analysis.png
+- gps_vs_embeddings.png
+
+================================================================================

@@ -1,5 +1,25 @@
 # Research Project: Semantic Clustering of Agricultural Drone Imagery
 
+---
+
+## Reusable Research Prompts
+
+This project includes reusable prompts for Claude Code to replicate the research workflow:
+
+| Prompt File | Purpose | Use Case |
+|-------------|---------|----------|
+| `RESEARCH_WORKFLOW_PROMPT.md` | Full workflow documentation | Reference for all procedures, code templates |
+| `CLAUDE_RESEARCH_PROMPT.md` | Quick start for new projects | Copy and customize for new image analysis |
+| `AGROIA_RESEARCH_PROMPT.md` | AgroIA project chronicle | Document project evolution, log changes over time |
+
+### How to Use
+
+1. **New drone/image project**: Copy `CLAUDE_RESEARCH_PROMPT.md`, fill in project details
+2. **AgroIA research session**: Reference `AGROIA_RESEARCH_PROMPT.md` for paper writing
+3. **Understanding procedures**: Read `RESEARCH_WORKFLOW_PROMPT.md` for complete documentation
+
+---
+
 ## Project Structure
 
 ```

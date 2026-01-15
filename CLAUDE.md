@@ -191,3 +191,131 @@ bash docs/generate_docs.bash
 bash docs/generate_docs.bash -c  # Clean build
 bash docs/generate_docs.bash -f  # Fast build (skip zoo/plugin docs)
 ```
+
+## Research Sessions
+
+Research sessions are stored in `sessions/YYYY-MM-DD/` with the following structure:
+
+```
+sessions/
+└── 2026-01-13/
+    ├── CLAUDE.md              # Session-specific notes
+    ├── session_summary.md     # Summary of work completed
+    ├── *.R                    # R analysis scripts
+    ├── *.py                   # Python analysis scripts
+    ├── *.csv                  # Exported data
+    ├── *.png                  # Generated figures
+    └── research/
+        ├── README.md
+        ├── data/processed/    # Processed datasets
+        └── paper/             # LaTeX paper
+            ├── main.tex
+            ├── main.pdf
+            ├── CHANGELOG.txt
+            ├── sections/      # Paper sections
+            └── figures/       # Paper figures
+```
+
+### Research Workflow
+
+#### 1. Dataset Analysis with CLIP Embeddings
+
+```python
+import fiftyone as fo
+import fiftyone.brain as fob
+
+# Load or create dataset
+dataset = fo.Dataset.from_images_dir("/path/to/images", name="dataset_name")
+
+# Compute CLIP embeddings with UMAP visualization
+fob.compute_visualization(
+    dataset,
+    embeddings="clip-vit-base32-torch",
+    method="umap",
+    brain_key="clip_viz"
+)
+
+# Launch app for visualization
+session = fo.launch_app(dataset, port=5151)
+```
+
+#### 2. Export Data for R/Python Analysis
+
+```python
+import pandas as pd
+
+# Get embedding coordinates
+results = dataset.load_brain_results("clip_viz")
+points = results.points
+
+# Export to CSV
+data = []
+for i, sample in enumerate(dataset):
+    data.append({
+        'sample_id': sample.id,
+        'filepath': sample.filepath,
+        'filename': os.path.basename(sample.filepath),
+        'umap_x': points[i, 0],
+        'umap_y': points[i, 1],
+        'tags': ','.join(sample.tags),
+    })
+pd.DataFrame(data).to_csv('dataset_export.csv', index=False)
+```
+
+#### 3. GPS Extraction from Drone Images
+
+```python
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+
+def get_gps_coords(image_path):
+    """Extract GPS coordinates from EXIF data"""
+    image = Image.open(image_path)
+    exif = image._getexif()
+    # ... parse GPSInfo tags
+    return latitude, longitude
+```
+
+#### 4. Satellite Map Visualization
+
+```python
+import requests
+
+# Google Maps Static API
+API_KEY = "your_key"
+url = f"https://maps.googleapis.com/maps/api/staticmap?center={lat},{lon}&zoom=18&size=640x640&maptype=satellite&key={API_KEY}"
+response = requests.get(url)
+```
+
+#### 5. LaTeX Paper Compilation
+
+```bash
+cd sessions/YYYY-MM-DD/research/paper
+pdflatex -interaction=nonstopmode main.tex
+pdflatex -interaction=nonstopmode main.tex  # Run twice for references
+```
+
+### Current Research: Santa Ines Drone Survey
+
+**Dataset**: 97 drone images from Santa Ines vineyard (Chile)
+**Location**: -34.4746, -70.9516
+
+**Key Results** (v0.2):
+- CLIP embeddings separate images by visual content (altitude/scale)
+- Two clusters identified: Close-up (89 images) and High-altitude (8 images)
+- 97.3% of similarity edges stay within same category
+- GPS location does not correlate with embedding clusters
+
+**Paper**: `sessions/2026-01-13/research/paper/main.pdf`
+
+### Reusable Research Prompts
+
+For starting new research projects with the same workflow:
+
+- **Full Workflow Guide**: `sessions/2026-01-13/research/RESEARCH_WORKFLOW_PROMPT.md`
+  - Complete documentation of procedures, code templates, and directory structure
+  - Includes configurable Python/R scripts with placeholder variables
+
+- **Quick Start Prompt**: `sessions/2026-01-13/research/CLAUDE_RESEARCH_PROMPT.md`
+  - Concise prompt to copy when starting new projects
+  - Example usage for different project types
