@@ -1,0 +1,210 @@
+% =============================================================================
+% TECHNICAL DETAILS
+% Status: Reference documentation
+% =============================================================================
+
+\subsection{Software Versions}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\toprule
+\textbf{Software} & \textbf{Version} \\
+\midrule
+FiftyOne & 1.12.0 \\
+Python & 3.12 \\
+R & 4.3.3 \\
+PyTorch & (system version) \\
+CLIP model & ViT-B/32 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Data Paths}
+
+\begin{verbatim}
+research/
++-- paper/
+|   +-- main.tex
+|   +-- sections/
+|   |   +-- abstract.tex
+|   |   +-- introduction.tex
+|   |   +-- objectives.tex
+|   |   +-- methods.tex
+|   |   +-- results.tex
+|   |   +-- discussion.tex
+|   |   +-- conclusions.tex
+|   |   +-- observations.tex
+|   |   +-- technical.tex
+|   +-- figures/
++-- data/
+|   +-- raw/
+|   +-- processed/
+|       +-- santa_ines_data.csv
+|       +-- similarity_neighbors.csv
++-- analysis/
+|   +-- R/
+|   |   +-- analysis.R
+|   |   +-- similarity_analysis.R
+|   +-- python/
++-- notes/
++-- logs/
+\end{verbatim}
+
+\subsection{Key Commands}
+
+\subsubsection{FiftyOne Dataset Operations}
+
+\begin{lstlisting}[language=Python]
+import fiftyone as fo
+import fiftyone.brain as fob
+
+# Load dataset
+dataset = fo.load_dataset("santa_ines_dron")
+
+# Access embeddings
+results = dataset.load_brain_results("clip_viz")
+points = results.points  # Shape: (97, 2)
+
+# Similarity search
+view = dataset.sort_by_similarity(
+    sample_id, k=10, brain_key="clip_similarity"
+)
+
+# Filter by tags
+high_alt = dataset.match_tags("high-altitude")
+closeups = dataset.match_tags("close-up")
+\end{lstlisting}
+
+\subsubsection{Compilation}
+
+\begin{lstlisting}[language=bash]
+# Compile LaTeX document
+cd research/paper
+pdflatex main.tex
+pdflatex main.tex  # Run twice for TOC
+
+# Or use latexmk for automatic compilation
+latexmk -pdf main.tex
+\end{lstlisting}
+
+\subsection{FiftyOne Brain Keys}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Brain Key} & \textbf{Type} & \textbf{Description} \\
+\midrule
+clip\_viz & visualization & CLIP embeddings + UMAP 2D projection \\
+clip\_similarity & similarity & Similarity index for retrieval \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{GPS Extraction from Drone Images}
+
+GPS coordinates were extracted from EXIF metadata embedded in DJI drone images:
+
+\begin{lstlisting}[language=Python]
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+
+def get_gps_coords(image_path):
+    """Extract GPS coordinates from EXIF data"""
+    image = Image.open(image_path)
+    exif_data = image._getexif()
+
+    gps_info = exif_data.get('GPSInfo', {})
+
+    # Convert DMS to decimal degrees
+    def to_degrees(dms):
+        d, m, s = dms
+        return d + m/60.0 + s/3600.0
+
+    lat = to_degrees(gps_info['GPSLatitude'])
+    if gps_info['GPSLatitudeRef'] == 'S':
+        lat = -lat
+
+    lon = to_degrees(gps_info['GPSLongitude'])
+    if gps_info['GPSLongitudeRef'] == 'W':
+        lon = -lon
+
+    return lat, lon
+\end{lstlisting}
+
+\subsection{Satellite Map Integration}
+
+Google Maps Static API was used to obtain satellite imagery background:
+
+\begin{lstlisting}[language=Python]
+import requests
+
+API_KEY = "YOUR_API_KEY"
+center_lat, center_lon = -34.4746, -70.9516
+zoom = 18  # High zoom for agricultural detail
+
+url = (f"https://maps.googleapis.com/maps/api/staticmap"
+       f"?center={center_lat},{center_lon}"
+       f"&zoom={zoom}&size=640x640"
+       f"&maptype=satellite&key={API_KEY}")
+
+response = requests.get(url)
+satellite_img = plt.imread(BytesIO(response.content))
+\end{lstlisting}
+
+\subsubsection{Coordinate Projection}
+
+GPS coordinates were converted to image pixel coordinates using Web Mercator projection:
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+
+def gps_to_pixels(lat, lon, center_lat, center_lon,
+                  zoom, img_size):
+    """Convert GPS to image pixel coordinates"""
+    def lat_lon_to_world(lat, lon, zoom):
+        lat_rad = np.radians(lat)
+        n = 2 ** zoom
+        x = (lon + 180) / 360 * n * 256
+        y = (1 - np.log(np.tan(lat_rad) +
+             1/np.cos(lat_rad)) / np.pi) / 2 * n * 256
+        return x, y
+
+    cx, cy = lat_lon_to_world(center_lat, center_lon, zoom)
+    px, py = lat_lon_to_world(lat, lon, zoom)
+
+    x = (px - cx) + img_size / 2
+    y = (py - cy) + img_size / 2
+    return x, y
+\end{lstlisting}
+
+\subsection{Analysis Scripts Reference}
+
+\begin{table}[H]
+\centering
+\caption{Python scripts for analysis pipeline}
+\begin{tabular}{ll}
+\toprule
+\textbf{Script} & \textbf{Purpose} \\
+\midrule
+gps\_satellite\_map.py & Extract GPS from EXIF metadata \\
+satellite\_map.py & Generate satellite map with GPS overlay \\
+cluster\_samples.py & Select representative images per cluster \\
+combined\_figure.py & Create 4-panel combined analysis figure \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{R scripts for statistical analysis}
+\begin{tabular}{ll}
+\toprule
+\textbf{Script} & \textbf{Purpose} \\
+\midrule
+analysis.R & Embedding visualization, cluster statistics \\
+similarity\_analysis.R & Network analysis, cohesion metrics \\
+\bottomrule
+\end{tabular}
+\end{table}

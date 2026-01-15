@@ -1,0 +1,509 @@
+% =============================================================================
+% RESULTS
+% Status: Updated for drone + ground camera analysis v0.4
+% =============================================================================
+
+% ============================================================================
+\subsection{Part I: Drone Imagery Analysis}
+% ============================================================================
+
+\subsection{Drone Site 1: Santa Ines}
+
+\subsubsection{Combined Spatial and Visual Analysis}
+
+Figure~\ref{fig:si_combined} presents an integrated view of the Santa Ines drone survey analysis, demonstrating the fundamental difference between physical GPS locations and visual semantic clustering.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{si_combined_analysis.png}
+    \caption{Combined analysis of Santa Ines drone imagery (97 images). \textbf{(A)} GPS coordinates overlaid on satellite imagery showing flight coverage; \textbf{(B)} UMAP projection of CLIP embeddings revealing two semantic clusters; \textbf{(C)} Representative close-up images capturing detailed crop inspection views; \textbf{(D)} Representative high-altitude overview images showing field row patterns.}
+    \label{fig:si_combined}
+\end{figure}
+
+Panel A reveals the physical flight pattern over the Santa Ines field. The drone followed systematic transects across the crop rows, with close-up images (green markers) distributed along parallel flight lines and high-altitude overview images (red markers) captured at strategic positions. Geographically, both image types are \textbf{spatially intermixed}.
+
+In contrast, Panel B shows the CLIP embedding space where images cluster by \textbf{visual content rather than geographic location}. Despite being captured from scattered GPS positions, all high-altitude images form a tight cluster clearly separated from the close-up images.
+
+\subsubsection{Cluster Characteristics}
+
+\begin{table}[H]
+\centering
+\caption{Santa Ines cluster statistics}
+\label{tab:si_clusters}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Category} & \textbf{Count} & \textbf{\%} & \textbf{UMAP X} & \textbf{UMAP Y} \\
+\midrule
+Close-up (crop inspection) & 89 & 91.8\% & $8.97 \pm 1.15$ & $2.15 \pm 1.28$ \\
+High-altitude (overview) & 8 & 8.2\% & $11.30 \pm 0.70$ & $-0.56 \pm 0.27$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Inter-cluster distance}: 3.56 UMAP units
+    \item \textbf{Cross-category edges}: 8/291 (2.7\%)
+    \item \textbf{Cluster cohesion}: Close-up 0.424, High-altitude 0.276
+\end{itemize}
+
+\subsubsection{Similarity Network}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{si_similarity_network.png}
+    \caption{Santa Ines similarity network. Gray edges connect images within the same category; yellow edges indicate cross-category connections.}
+    \label{fig:si_network}
+\end{figure}
+
+% ============================================================================
+\subsection{Drone Site 2: La Capilla}
+
+\subsubsection{Combined Spatial and Visual Analysis}
+
+Figure~\ref{fig:lc_combined} presents the La Capilla drone survey analysis, revealing a different clustering pattern than Santa Ines.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{lc_combined_analysis.png}
+    \caption{Combined analysis of La Capilla drone imagery (111 images). \textbf{(A)} GPS coordinates showing flight coverage; \textbf{(B)} UMAP projection revealing two semantic clusters with large separation; \textbf{(C)} Representative very close-up images showing plant-level detail; \textbf{(D)} Representative medium-altitude images showing row structure.}
+    \label{fig:lc_combined}
+\end{figure}
+
+The La Capilla dataset shows a striking spatial-semantic decoupling: The ``very close-up'' cluster (purple) represents images taken from a concentrated GPS region in the northwest of the field, while the ``medium altitude'' cluster (green) spans a larger geographic area. However, in embedding space, these form two completely separated clusters with \textbf{zero cross-category connections}.
+
+\subsubsection{Visual Characteristics}
+
+\textbf{Very close-up images} (26 images, 23.4\%) are characterized by:
+\begin{itemize}
+    \item Dense foliage filling the entire frame
+    \item Individual leaf textures visible
+    \item No visible row structure or soil
+    \item Plant-level detail for crop inspection
+\end{itemize}
+
+\textbf{Medium-altitude images} (85 images, 76.6\%) exhibit:
+\begin{itemize}
+    \item Clear row structure with soil paths visible
+    \item Multiple crop rows in each frame
+    \item Geometric patterns from above
+    \item Field-scale coverage for mapping
+\end{itemize}
+
+\subsubsection{Cluster Characteristics}
+
+\begin{table}[H]
+\centering
+\caption{La Capilla cluster statistics}
+\label{tab:lc_clusters}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Category} & \textbf{Count} & \textbf{\%} & \textbf{UMAP X} & \textbf{UMAP Y} \\
+\midrule
+Very close-up (plant-level) & 26 & 23.4\% & $-0.43 \pm 0.34$ & $2.45 \pm 0.48$ \\
+Medium altitude (row-visible) & 85 & 76.6\% & $12.07 \pm 1.85$ & $5.74 \pm 1.63$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Inter-cluster distance}: 12.93 UMAP units
+    \item \textbf{Cross-category edges}: 0/333 (0.0\%)
+    \item \textbf{Cluster cohesion}: Very close-up 0.410, Medium altitude 0.726
+\end{itemize}
+
+\finding{La Capilla shows perfect cluster separation with zero cross-category edges, indicating strong visual distinction between image types}
+
+\subsubsection{Similarity Network}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{lc_similarity_network.png}
+    \caption{La Capilla similarity network. All edges are within-category (gray), with no cross-category connections.}
+    \label{fig:lc_network}
+\end{figure}
+
+\subsubsection{GPS vs Embedding Space}
+
+Figure~\ref{fig:lc_gps} demonstrates the key finding: images that are geographically concentrated (very close-up cluster in GPS space) form a distinct semantic cluster in embedding space.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{lc_gps_vs_embeddings.png}
+    \caption{La Capilla: GPS coordinates (left) vs CLIP embedding space (right). Color indicates longitude; red circles mark embedding outliers. The very close-up images are geographically concentrated but form a distinct semantic cluster.}
+    \label{fig:lc_gps}
+\end{figure}
+
+% ============================================================================
+\subsection{Cross-Site Comparison}
+
+\subsubsection{Summary Statistics}
+
+\begin{table}[H]
+\centering
+\caption{Cross-site comparison of clustering metrics}
+\label{tab:comparison}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{Santa Ines} & \textbf{La Capilla} \\
+\midrule
+Total images & 97 & 111 \\
+Cluster ratio (primary/secondary) & 92\% / 8\% & 77\% / 23\% \\
+Inter-cluster distance (UMAP units) & 3.56 & \textbf{12.93} \\
+Cross-category edges (\%) & 2.7\% & \textbf{0.0\%} \\
+Primary cluster cohesion & 0.424 & 0.726 \\
+Secondary cluster cohesion & 0.276 & 0.410 \\
+Semantic distinction & Close-up vs Overview & Plant-level vs Row-visible \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Key Findings}
+
+\begin{enumerate}
+    \item \textbf{Consistent clustering}: Both sites showed clear bimodal clustering based on imaging altitude/purpose, despite different cluster ratios.
+
+    \item \textbf{Stronger separation at La Capilla}: Inter-cluster distance was 3.6$\times$ larger at La Capilla (12.93 vs 3.56 units), reflecting a more pronounced visual distinction between image types.
+
+    \item \textbf{Perfect separation achievable}: La Capilla achieved 0\% cross-category connections, demonstrating that embedding-based clustering can achieve complete category separation.
+
+    \item \textbf{Cohesion patterns}: In both sites, the smaller cluster showed higher cohesion (tighter grouping), suggesting more homogeneous visual content in minority categories.
+\end{enumerate}
+
+\finding{CLIP embeddings consistently separate drone images by visual content (altitude/detail level) across different agricultural sites, without any domain-specific training}
+
+\subsubsection{Cluster Cohesion Comparison}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{si_cluster_cohesion.png}
+        \caption{Santa Ines}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{lc_cluster_cohesion.png}
+        \caption{La Capilla}
+    \end{subfigure}
+    \caption{Cluster cohesion (mean distance to 5 nearest neighbors) at both sites.}
+    \label{fig:cohesion_comparison}
+\end{figure}
+
+\observation{The secondary cluster (minority category) shows higher cohesion at both sites, suggesting that outlier image types have more consistent visual characteristics}
+
+% ============================================================================
+\subsection{Part II: Ground Camera Imagery Analysis}
+% ============================================================================
+
+Ground-level imagery captured with mobile phones (``Celular'') provides a complementary perspective to drone imagery, focusing on plant-level detail rather than field-scale patterns.
+
+\subsubsection{Dataset Summary}
+
+\begin{table}[H]
+\centering
+\caption{Ground camera datasets processed with CLIP embeddings}
+\label{tab:ground_summary}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Site} & \textbf{Images} & \textbf{Format} & \textbf{With GPS} & \textbf{Device} \\
+\midrule
+Santa Ines (Ground) & 635 & JPEG & 635 (100\%) & Android \\
+La Capilla (Ground) & 822 & JPEG & 799 (97\%) & Android \\
+Apalta & 961 & HEIC & 960 (99.9\%) & iPhone XR \\
+Camarico & 33 & JPEG & 27 (82\%) & Android \\
+\midrule
+\textbf{Total} & \textbf{2,451} & & \textbf{2,421 (98.8\%)} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Embedding Space Analysis}
+
+K-means clustering was applied to the UMAP-projected embeddings to identify natural groupings in the ground camera imagery:
+
+\begin{table}[H]
+\centering
+\caption{Ground camera cluster analysis metrics}
+\label{tab:ground_clusters}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Site} & \textbf{Images} & \textbf{Optimal k} & \textbf{Silhouette} & \textbf{Inter-cluster Dist} \\
+\midrule
+Santa Ines (Ground) & 635 & 2 & \textbf{0.795} & 12.95 \\
+La Capilla (Ground) & 822 & 2 & 0.472 & 3.50 \\
+Apalta & 961 & 4 & 0.415 & 3.27 \\
+Camarico & 33 & 2 & 0.461 & 2.35 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\finding{Santa Ines ground camera shows exceptionally strong clustering (silhouette=0.795), the highest of all datasets analyzed---including drone imagery}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Ground Site 1: Santa Ines (Celular)}
+
+Figure~\ref{fig:sic_combined} presents the combined analysis of Santa Ines ground camera imagery, showing remarkable cluster separation driven by survey date differences.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sic_combined_analysis.png}
+    \caption{Combined analysis of Santa Ines ground camera imagery (635 images). \textbf{(A)} GPS coordinates showing field coverage; \textbf{(B)} UMAP projection revealing two perfectly separated clusters; \textbf{(C)} Cluster distribution; \textbf{(D)} Dataset metrics showing 0\% cross-cluster edges.}
+    \label{fig:sic_combined}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{sic_similarity_network.png}
+        \caption{Similarity network (0\% cross-cluster)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{sic_temporal_analysis.png}
+        \caption{Temporal clustering by survey date}
+    \end{subfigure}
+    \caption{Santa Ines ground camera: (a) k-NN similarity network showing perfect cluster separation with no cross-cluster edges; (b) Temporal analysis revealing clusters correspond to different survey dates (Jan 6 vs Jan 8, 2026).}
+    \label{fig:sic_analysis}
+\end{figure}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Ground Site 2: La Capilla (Celular)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{lcc_combined_analysis.png}
+    \caption{Combined analysis of La Capilla ground camera imagery (822 images). Unlike the drone dataset which showed perfect separation, ground camera clustering shows moderate overlap with 1.5\% cross-cluster edges.}
+    \label{fig:lcc_combined}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{lcc_similarity_network.png}
+        \caption{Similarity network (1.5\% cross-cluster)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{lcc_cluster_cohesion.png}
+        \caption{Cluster cohesion comparison}
+    \end{subfigure}
+    \caption{La Capilla ground camera analysis showing moderate cluster separation.}
+    \label{fig:lcc_analysis}
+\end{figure}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Ground Site 3: Apalta}
+
+Apalta represents the largest ground camera dataset (961 images) and shows more complex clustering with 4 distinct groups.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{ap_combined_analysis.png}
+    \caption{Combined analysis of Apalta ground camera imagery (961 images). K-means identified 4 clusters, suggesting greater visual diversity in this dataset.}
+    \label{fig:ap_combined}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{ap_similarity_network.png}
+        \caption{Similarity network (2.0\% cross-cluster)}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{ap_cluster_cohesion.png}
+        \caption{Cluster cohesion (4 clusters)}
+    \end{subfigure}
+    \caption{Apalta ground camera analysis showing 4-cluster structure with varying cohesion.}
+    \label{fig:ap_analysis}
+\end{figure}
+
+\observation{Apalta's 4-cluster structure (vs. 2 clusters at other sites) suggests greater internal visual diversity, possibly due to varied imaging conditions or crop heterogeneity across the field}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Ground Site 4: Camarico}
+
+Camarico represents the smallest dataset (33 images), providing a test of methodology robustness on limited data.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{cam_combined_analysis.png}
+    \caption{Combined analysis of Camarico ground camera imagery (33 images). Despite the small sample size, meaningful clustering is observed with silhouette=0.461.}
+    \label{fig:cam_combined}
+\end{figure}
+
+\finding{Even with only 33 images, Camarico produced interpretable clustering (silhouette=0.461, 6.1\% cross-cluster edges), demonstrating methodology applicability to minimal datasets}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Ground Camera: Network Analysis Summary}
+
+\begin{table}[H]
+\centering
+\caption{Ground camera similarity network analysis (k=3 nearest neighbors)}
+\label{tab:ground_network}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Site} & \textbf{Within-cluster} & \textbf{Cross-cluster} & \textbf{Cross \%} & \textbf{Separation} \\
+\midrule
+Santa Ines (Ground) & 1,905 & 0 & \textbf{0.0\%} & Perfect \\
+La Capilla (Ground) & 2,428 & 38 & 1.5\% & Strong \\
+Apalta & 2,824 & 59 & 2.0\% & Strong \\
+Camarico & 93 & 6 & 6.1\% & Moderate \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\finding{Santa Ines ground camera achieved perfect cluster separation (0\% cross-cluster edges)---matching La Capilla drone's perfect separation and demonstrating that strong clustering is possible with both capture modalities}
+
+% ----------------------------------------------------------------------------
+\subsubsection{Temporal Clustering Discovery}
+
+A key finding emerged from the Santa Ines ground camera analysis: the two clusters correspond almost perfectly to \textbf{different survey dates}:
+
+\begin{itemize}
+    \item \textbf{Cluster 1} (527 images, 83\%): January 8, 2026 survey
+    \item \textbf{Cluster 2} (108 images, 17\%): January 6, 2026 survey
+\end{itemize}
+
+\observation{CLIP embeddings automatically detected visual differences between survey dates---likely due to changes in lighting conditions, time of day, or subtle crop development over the 2-day interval}
+
+This temporal sensitivity demonstrates that vision-language embeddings can serve as an implicit indicator of survey conditions, potentially useful for:
+\begin{itemize}
+    \item Quality control (detecting inconsistent imaging conditions)
+    \item Change detection (monitoring crop development over time)
+    \item Data stratification (grouping images by visual similarity for analysis)
+\end{itemize}
+
+\subsubsection{Comparison: Drone vs Ground Camera}
+
+\begin{table}[H]
+\centering
+\caption{Clustering comparison across capture modalities}
+\label{tab:modality_comparison}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{Silhouette} & \textbf{Inter-dist} \\
+\midrule
+Santa Ines & Drone & 97 & --- & 3.56 \\
+Santa Ines & Ground & 635 & 0.795 & 12.95 \\
+La Capilla & Drone & 111 & --- & 12.93 \\
+La Capilla & Ground & 822 & 0.472 & 3.50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+An interesting pattern emerges: Santa Ines ground (12.95) shows similar cluster separation to La Capilla drone (12.93), while La Capilla ground (3.50) resembles Santa Ines drone (3.56). This suggests that cluster separation magnitude is driven by the underlying visual diversity in each dataset rather than capture modality.
+
+\subsubsection{Key Characteristics}
+
+Ground camera imagery differs fundamentally from drone imagery:
+
+\begin{itemize}
+    \item \textbf{Perspective}: Horizontal view at plant level vs. top-down aerial view
+    \item \textbf{Content}: Individual plants, leaves, fruits, and row structure visible from ground level
+    \item \textbf{Scale}: Much larger datasets (635--961 images per site vs. 97--111 for drone)
+    \item \textbf{Collection method}: Walking through fields vs. programmed flight paths
+    \item \textbf{Temporal sensitivity}: Ground camera embeddings detected multi-day survey differences
+\end{itemize}
+
+\finding{Ground camera datasets contain 12$\times$ more images on average than drone datasets, reflecting the intensive ground-truthing effort typical in precision agriculture research}
+
+\subsubsection{GPS Coverage}
+
+GPS extraction was successful for the vast majority of ground camera images:
+
+\begin{itemize}
+    \item \textbf{Android phones}: Standard EXIF GPS extraction (97--100\% success)
+    \item \textbf{iPhone (HEIC)}: Required specialized IFD-based GPS extraction (99.9\% success)
+\end{itemize}
+
+\subsubsection{Geospatial Outputs}
+
+For each ground camera dataset, the following files were generated:
+
+\begin{itemize}
+    \item \textbf{KML/KMZ}: Photo locations viewable in Google Earth
+    \item \textbf{Shapefile (UTM 19S)}: GIS-compatible format with UTM coordinates
+    \item \textbf{CSV}: Complete dataset with UMAP embeddings, GPS, and metadata
+\end{itemize}
+
+% ============================================================================
+\subsection{Part III: Combined Dataset Summary}
+% ============================================================================
+
+\begin{table}[H]
+\centering
+\caption{Complete dataset summary across all capture modalities}
+\label{tab:all_datasets}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{GPS Coverage} & \textbf{FiftyOne Dataset} \\
+\midrule
+Santa Ines & Drone & 97 & 100\% & santa\_ines\_dron \\
+Santa Ines & Ground & 635 & 100\% & santa\_ines\_celular \\
+La Capilla & Drone & 111 & 100\% & la\_capilla\_dron \\
+La Capilla & Ground & 822 & 97\% & la\_capilla\_celular \\
+Apalta & Ground & 961 & 99.9\% & apalta \\
+Camarico & Ground & 33 & 82\% & camarico \\
+\midrule
+\multicolumn{2}{l}{\textbf{Total}} & \textbf{2,659} & \textbf{98.7\%} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\finding{The combined multi-modal dataset comprises 2,659 agricultural images across 4 sites and 2 capture modalities, all processed with identical CLIP embedding methodology}
+
+\subsubsection{Data Availability by Site and Modality}
+
+An important observation is that not all sites have both capture modalities available:
+
+\begin{table}[H]
+\centering
+\caption{Modality availability comparison across sites}
+\label{tab:modality_availability}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Site} & \textbf{Drone} & \textbf{Ground} & \textbf{Drone Images} & \textbf{Ground Images} & \textbf{Ratio (G:D)} \\
+\midrule
+Santa Ines & \checkmark & \checkmark & 97 & 635 & 6.5:1 \\
+La Capilla & \checkmark & \checkmark & 111 & 822 & 7.4:1 \\
+Apalta & --- & \checkmark & 0 & 961 & Ground only \\
+Camarico & --- & \checkmark & 0 & 33 & Ground only \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\observation{Two sites (Santa Ines and La Capilla) have complete multi-modal coverage with both drone and ground camera imagery, while two sites (Apalta and Camarico) have only ground camera data available}
+
+Key findings on data availability:
+
+\begin{itemize}
+    \item \textbf{Multi-modal sites}: Santa Ines and La Capilla have both drone and ground camera imagery, enabling direct comparison of embedding behavior across capture modalities
+    \item \textbf{Ground-only sites}: Apalta and Camarico were surveyed only with ground cameras, limiting analysis to single-modality embedding patterns
+    \item \textbf{Ground camera ratio}: For sites with both modalities, ground camera images outnumber drone images by approximately 6.5--7.4$\times$
+    \item \textbf{Smallest dataset}: Camarico has the smallest dataset (33 images), significantly smaller than other ground camera datasets (635--961 images)
+\end{itemize}
+
+\finding{Camarico represents a minimal-data scenario with only 33 ground camera images and no drone coverage---useful for testing methodology robustness on limited data but insufficient for detailed cluster analysis}
+
+\subsubsection{Drone vs Ground Camera: Side-by-Side Comparison}
+
+For the two sites with complete multi-modal coverage, we can directly compare embedding behavior:
+
+\begin{table}[H]
+\centering
+\caption{Detailed comparison of drone vs ground camera for multi-modal sites}
+\label{tab:drone_vs_ground}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Site} & \textbf{Modality} & \textbf{Images} & \textbf{Clusters} & \textbf{Inter-dist} & \textbf{Primary Driver} \\
+\midrule
+Santa Ines & Drone & 97 & 2 & 3.56 & Altitude \\
+Santa Ines & Ground & 635 & 2 & 12.95 & Temporal (date) \\
+\midrule
+La Capilla & Drone & 111 & 2 & 12.93 & Altitude \\
+La Capilla & Ground & 822 & 2 & 3.50 & Visual content \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\observation{Interestingly, the sites show opposite patterns: Santa Ines has stronger cluster separation in ground imagery (temporal), while La Capilla has stronger separation in drone imagery (altitude). This suggests that cluster separation magnitude depends on the underlying visual diversity in each dataset rather than the capture modality itself}

@@ -1,0 +1,27 @@
+% =============================================================================
+% ABSTRACT
+% Status: Updated for drone + ground camera analysis v0.4
+% =============================================================================
+
+This study explores the application of vision-language embedding models for automatic semantic categorization of agricultural imagery across multiple field sites and capture modalities. Using CLIP (Contrastive Language-Image Pre-training) embeddings with UMAP dimensionality reduction, we demonstrate that both \textbf{drone} and \textbf{ground camera} images can be automatically clustered by semantic content without manual labeling or domain-specific training.
+
+\subsection*{Drone Imagery}
+Analysis of two drone survey datasets from Chilean tomato fields reveals consistent clustering behavior:
+
+\begin{itemize}
+    \item \textbf{Santa Ines Drone} (97 images): Two clusters identified---close-up crop inspection (92\%) and high-altitude field mapping (8\%)---with 3.56 UMAP units separation.
+    \item \textbf{La Capilla Drone} (111 images): Two clusters identified---very close-up plant-level (23\%) and medium-altitude row-visible (77\%)---with 12.93 UMAP units separation and perfect cluster isolation (0\% cross-category connections).
+\end{itemize}
+
+\subsection*{Ground Camera Imagery}
+Four ground-level datasets captured with mobile phones (``Celular'') were also analyzed:
+
+\begin{itemize}
+    \item \textbf{Santa Ines Ground} (635 images): Ground-level crop inspection imagery
+    \item \textbf{La Capilla Ground} (822 images): Ground-level field documentation
+    \item \textbf{Apalta} (961 images): Extensive ground survey with iPhone HEIC format
+    \item \textbf{Camarico} (33 images): Compact ground-level dataset
+\end{itemize}
+
+\subsection*{Key Findings}
+Embedding-based clusters capture \textbf{visual semantic similarity} rather than geographic proximity---images from scattered GPS locations cluster together based on content type. The methodology generalizes across both aerial (drone) and terrestrial (ground camera) capture modalities, suggesting that pretrained vision-language models offer a practical, zero-configuration approach for organizing diverse agricultural image datasets.

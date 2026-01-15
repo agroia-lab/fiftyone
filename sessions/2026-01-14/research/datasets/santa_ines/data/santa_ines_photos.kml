@@ -1,0 +1,2922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <name>Santa Ines Drone Photos</name>
+        <Folder id="2">
+            <Style id="5">
+                <IconStyle id="6">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="7">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="10">
+                <IconStyle id="11">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="12">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="15">
+                <IconStyle id="16">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="17">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="20">
+                <IconStyle id="21">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="22">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="25">
+                <IconStyle id="26">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="27">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="30">
+                <IconStyle id="31">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="32">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="35">
+                <IconStyle id="36">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="37">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="40">
+                <IconStyle id="41">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="42">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="45">
+                <IconStyle id="46">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="47">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="56">
+                <IconStyle id="57">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="58">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="61">
+                <IconStyle id="62">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="63">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="66">
+                <IconStyle id="67">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="68">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="71">
+                <IconStyle id="72">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="73">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="76">
+                <IconStyle id="77">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="78">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="81">
+                <IconStyle id="82">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="83">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="86">
+                <IconStyle id="87">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="88">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="91">
+                <IconStyle id="92">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="93">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="96">
+                <IconStyle id="97">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="98">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="101">
+                <IconStyle id="102">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="103">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="106">
+                <IconStyle id="107">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="108">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="111">
+                <IconStyle id="112">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="113">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="116">
+                <IconStyle id="117">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="118">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="121">
+                <IconStyle id="122">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="123">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="126">
+                <IconStyle id="127">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="128">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="131">
+                <IconStyle id="132">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="133">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="136">
+                <IconStyle id="137">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="138">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="141">
+                <IconStyle id="142">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="143">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="146">
+                <IconStyle id="147">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="148">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="151">
+                <IconStyle id="152">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="153">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="156">
+                <IconStyle id="157">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="158">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="161">
+                <IconStyle id="162">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="163">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="166">
+                <IconStyle id="167">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="168">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="171">
+                <IconStyle id="172">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="173">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="176">
+                <IconStyle id="177">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="178">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="181">
+                <IconStyle id="182">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="183">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="186">
+                <IconStyle id="187">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="188">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="191">
+                <IconStyle id="192">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="193">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="196">
+                <IconStyle id="197">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="198">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="201">
+                <IconStyle id="202">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="203">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="206">
+                <IconStyle id="207">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="208">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="211">
+                <IconStyle id="212">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="213">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="216">
+                <IconStyle id="217">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="218">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="221">
+                <IconStyle id="222">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="223">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="226">
+                <IconStyle id="227">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="228">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="231">
+                <IconStyle id="232">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="233">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="236">
+                <IconStyle id="237">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="238">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="241">
+                <IconStyle id="242">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="243">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="246">
+                <IconStyle id="247">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="248">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="256">
+                <IconStyle id="257">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="258">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="261">
+                <IconStyle id="262">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="263">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="266">
+                <IconStyle id="267">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="268">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="271">
+                <IconStyle id="272">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="273">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="276">
+                <IconStyle id="277">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="278">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="281">
+                <IconStyle id="282">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="283">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="286">
+                <IconStyle id="287">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="288">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="291">
+                <IconStyle id="292">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="293">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="296">
+                <IconStyle id="297">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="298">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="301">
+                <IconStyle id="302">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="303">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="306">
+                <IconStyle id="307">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="308">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="311">
+                <IconStyle id="312">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="313">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="316">
+                <IconStyle id="317">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="318">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="321">
+                <IconStyle id="322">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="323">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="326">
+                <IconStyle id="327">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="328">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="331">
+                <IconStyle id="332">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="333">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="336">
+                <IconStyle id="337">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="338">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="341">
+                <IconStyle id="342">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="343">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="346">
+                <IconStyle id="347">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="348">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="351">
+                <IconStyle id="352">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="353">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="356">
+                <IconStyle id="357">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="358">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="361">
+                <IconStyle id="362">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="363">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="366">
+                <IconStyle id="367">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="368">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="371">
+                <IconStyle id="372">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="373">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="376">
+                <IconStyle id="377">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="378">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="381">
+                <IconStyle id="382">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="383">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="386">
+                <IconStyle id="387">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="388">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="391">
+                <IconStyle id="392">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="393">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="396">
+                <IconStyle id="397">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="398">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="401">
+                <IconStyle id="402">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="403">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="406">
+                <IconStyle id="407">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="408">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="411">
+                <IconStyle id="412">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="413">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="416">
+                <IconStyle id="417">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="418">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="421">
+                <IconStyle id="422">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="423">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="426">
+                <IconStyle id="427">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="428">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="431">
+                <IconStyle id="432">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="433">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="436">
+                <IconStyle id="437">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="438">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="441">
+                <IconStyle id="442">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="443">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="446">
+                <IconStyle id="447">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="448">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="451">
+                <IconStyle id="452">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="453">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="456">
+                <IconStyle id="457">
+                    <color>ff008000</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="458">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <name>Close-up/Inspection</name>
+            <Placemark id="4">
+                <name>DJI_0460.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0460.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474707, -70.952827<br>
+        <b>UMAP X:</b> 8.413862228393555<br>
+        <b>UMAP Y:</b> 4.167708396911621<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#5</styleUrl>
+                <Point id="3">
+                    <coordinates>-70.95282747222222,-34.474706805555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="9">
+                <name>DJI_0461.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0461.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474707, -70.952822<br>
+        <b>UMAP X:</b> 8.515076637268066<br>
+        <b>UMAP Y:</b> 3.9118363857269287<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#10</styleUrl>
+                <Point id="8">
+                    <coordinates>-70.95282175,-34.47470741666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="14">
+                <name>DJI_0462.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0462.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474710, -70.952812<br>
+        <b>UMAP X:</b> 8.58989429473877<br>
+        <b>UMAP Y:</b> 4.425410747528076<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#15</styleUrl>
+                <Point id="13">
+                    <coordinates>-70.95281227777778,-34.47470975,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="19">
+                <name>DJI_0463.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0463.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474716, -70.952794<br>
+        <b>UMAP X:</b> 8.972613334655762<br>
+        <b>UMAP Y:</b> 3.963949680328369<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#20</styleUrl>
+                <Point id="18">
+                    <coordinates>-70.95279377777779,-34.474716138888894,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="24">
+                <name>DJI_0464.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0464.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474719, -70.952788<br>
+        <b>UMAP X:</b> 10.38784122467041<br>
+        <b>UMAP Y:</b> 3.831589460372925<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#25</styleUrl>
+                <Point id="23">
+                    <coordinates>-70.95278761111112,-34.47471919444445,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="29">
+                <name>DJI_0465.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0465.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474727, -70.952765<br>
+        <b>UMAP X:</b> 10.680802345275879<br>
+        <b>UMAP Y:</b> 3.785059690475464<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#30</styleUrl>
+                <Point id="28">
+                    <coordinates>-70.9527648888889,-34.47472716666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="34">
+                <name>DJI_0466.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0466.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474729, -70.952760<br>
+        <b>UMAP X:</b> 10.526094436645508<br>
+        <b>UMAP Y:</b> 4.095888137817383<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#35</styleUrl>
+                <Point id="33">
+                    <coordinates>-70.95276041666666,-34.474728694444444,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="39">
+                <name>DJI_0467.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0467.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474733, -70.952746<br>
+        <b>UMAP X:</b> 10.425422668457031<br>
+        <b>UMAP Y:</b> 4.260420322418213<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#40</styleUrl>
+                <Point id="38">
+                    <coordinates>-70.95274602777778,-34.47473288888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="44">
+                <name>DJI_0468.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0468.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474738, -70.952734<br>
+        <b>UMAP X:</b> 8.199261665344238<br>
+        <b>UMAP Y:</b> 2.7064645290374756<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#45</styleUrl>
+                <Point id="43">
+                    <coordinates>-70.95273430555555,-34.474737861111116,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="55">
+                <name>DJI_0470.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0470.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474758, -70.952656<br>
+        <b>UMAP X:</b> 10.021482467651367<br>
+        <b>UMAP Y:</b> 1.981876254081726<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#56</styleUrl>
+                <Point id="54">
+                    <coordinates>-70.95265558333334,-34.47475775,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="60">
+                <name>DJI_0471.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0471.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474760, -70.952646<br>
+        <b>UMAP X:</b> 9.607941627502441<br>
+        <b>UMAP Y:</b> 0.34539055824279785<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#61</styleUrl>
+                <Point id="59">
+                    <coordinates>-70.95264641666667,-34.47475991666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="65">
+                <name>DJI_0472.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0472.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474765, -70.952630<br>
+        <b>UMAP X:</b> 9.8025484085083<br>
+        <b>UMAP Y:</b> 1.2118817567825317<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#66</styleUrl>
+                <Point id="64">
+                    <coordinates>-70.95263005555556,-34.47476511111111,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="70">
+                <name>DJI_0473.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0473.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474775, -70.952599<br>
+        <b>UMAP X:</b> 9.808563232421875<br>
+        <b>UMAP Y:</b> 2.7243854999542236<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#71</styleUrl>
+                <Point id="69">
+                    <coordinates>-70.95259891666667,-34.474775361111114,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="75">
+                <name>DJI_0474.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0474.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474776, -70.952593<br>
+        <b>UMAP X:</b> 9.487163543701172<br>
+        <b>UMAP Y:</b> 0.21092072129249573<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#76</styleUrl>
+                <Point id="74">
+                    <coordinates>-70.95259325,-34.474775972222226,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="80">
+                <name>DJI_0475.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0475.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474784, -70.952560<br>
+        <b>UMAP X:</b> 10.304973602294922<br>
+        <b>UMAP Y:</b> 0.30303534865379333<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#81</styleUrl>
+                <Point id="79">
+                    <coordinates>-70.95256011111111,-34.474784416666665,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="85">
+                <name>DJI_0476.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0476.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474788, -70.952549<br>
+        <b>UMAP X:</b> 10.818231582641602<br>
+        <b>UMAP Y:</b> 0.3750276565551758<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#86</styleUrl>
+                <Point id="84">
+                    <coordinates>-70.95254886111111,-34.47478786111111,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="90">
+                <name>DJI_0477.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0477.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474790, -70.952537<br>
+        <b>UMAP X:</b> 10.67883014678955<br>
+        <b>UMAP Y:</b> 0.4458291828632355<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#91</styleUrl>
+                <Point id="89">
+                    <coordinates>-70.95253697222222,-34.47479013888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="95">
+                <name>DJI_0478.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0478.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474790, -70.952533<br>
+        <b>UMAP X:</b> 8.662928581237793<br>
+        <b>UMAP Y:</b> 4.144806861877441<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#96</styleUrl>
+                <Point id="94">
+                    <coordinates>-70.95253286111111,-34.47478980555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="100">
+                <name>DJI_0479.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0479.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474792, -70.952522<br>
+        <b>UMAP X:</b> 9.807107925415039<br>
+        <b>UMAP Y:</b> 1.7257425785064697<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#101</styleUrl>
+                <Point id="99">
+                    <coordinates>-70.95252172222223,-34.47479175,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="105">
+                <name>DJI_0480.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0480.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474796, -70.952504<br>
+        <b>UMAP X:</b> 9.408653259277344<br>
+        <b>UMAP Y:</b> 3.489637613296509<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#106</styleUrl>
+                <Point id="104">
+                    <coordinates>-70.95250355555555,-34.474796250000004,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="110">
+                <name>DJI_0481.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0481.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474797, -70.952498<br>
+        <b>UMAP X:</b> 9.073235511779785<br>
+        <b>UMAP Y:</b> 4.3774824142456055<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#111</styleUrl>
+                <Point id="109">
+                    <coordinates>-70.95249825,-34.47479719444445,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="115">
+                <name>DJI_0482.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0482.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474800, -70.952489<br>
+        <b>UMAP X:</b> 9.148200988769531<br>
+        <b>UMAP Y:</b> 2.1385693550109863<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#116</styleUrl>
+                <Point id="114">
+                    <coordinates>-70.95248927777779,-34.474799805555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="120">
+                <name>DJI_0483.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0483.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474803, -70.952477<br>
+        <b>UMAP X:</b> 10.585304260253906<br>
+        <b>UMAP Y:</b> 2.9523468017578125<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#121</styleUrl>
+                <Point id="119">
+                    <coordinates>-70.95247661111111,-34.4748025,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="125">
+                <name>DJI_0484.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0484.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474804, -70.952466<br>
+        <b>UMAP X:</b> 10.263391494750977<br>
+        <b>UMAP Y:</b> 1.9766786098480225<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#126</styleUrl>
+                <Point id="124">
+                    <coordinates>-70.95246641666667,-34.47480355555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="130">
+                <name>DJI_0485.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0485.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474808, -70.952449<br>
+        <b>UMAP X:</b> 10.233793258666992<br>
+        <b>UMAP Y:</b> 2.2629554271698<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#131</styleUrl>
+                <Point id="129">
+                    <coordinates>-70.9524488888889,-34.47480825,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="135">
+                <name>DJI_0486.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0486.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474811, -70.952436<br>
+        <b>UMAP X:</b> 10.435759544372559<br>
+        <b>UMAP Y:</b> 3.6677300930023193<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#136</styleUrl>
+                <Point id="134">
+                    <coordinates>-70.95243633333334,-34.474811055555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="140">
+                <name>DJI_0487.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0487.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474820, -70.952410<br>
+        <b>UMAP X:</b> 10.677411079406738<br>
+        <b>UMAP Y:</b> 3.068922281265259<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#141</styleUrl>
+                <Point id="139">
+                    <coordinates>-70.95240966666667,-34.474820111111114,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="145">
+                <name>DJI_0488.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0488.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474827, -70.952379<br>
+        <b>UMAP X:</b> 7.861658096313477<br>
+        <b>UMAP Y:</b> 0.7712122797966003<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#146</styleUrl>
+                <Point id="144">
+                    <coordinates>-70.95237922222222,-34.47482658333333,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="150">
+                <name>DJI_0489.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0489.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474832, -70.952339<br>
+        <b>UMAP X:</b> 9.237338066101074<br>
+        <b>UMAP Y:</b> 2.810457468032837<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#151</styleUrl>
+                <Point id="149">
+                    <coordinates>-70.95233922222222,-34.47483166666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="155">
+                <name>DJI_0490.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0490.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474831, -70.952330<br>
+        <b>UMAP X:</b> 10.247431755065918<br>
+        <b>UMAP Y:</b> 3.400269031524658<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#156</styleUrl>
+                <Point id="154">
+                    <coordinates>-70.9523295,-34.47483077777778,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="160">
+                <name>DJI_0491.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0491.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474837, -70.952304<br>
+        <b>UMAP X:</b> 8.219841003417969<br>
+        <b>UMAP Y:</b> 0.7107461094856262<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#161</styleUrl>
+                <Point id="159">
+                    <coordinates>-70.95230408333333,-34.47483719444445,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="165">
+                <name>DJI_0492.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0492.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474844, -70.952272<br>
+        <b>UMAP X:</b> 8.865410804748535<br>
+        <b>UMAP Y:</b> 1.0621570348739624<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#166</styleUrl>
+                <Point id="164">
+                    <coordinates>-70.95227225000001,-34.47484391666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="170">
+                <name>DJI_0493.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0493.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474854, -70.952236<br>
+        <b>UMAP X:</b> 8.350787162780762<br>
+        <b>UMAP Y:</b> 2.28867506980896<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#171</styleUrl>
+                <Point id="169">
+                    <coordinates>-70.95223552777779,-34.47485405555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="175">
+                <name>DJI_0494.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0494.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474557, -70.952858<br>
+        <b>UMAP X:</b> 9.098870277404785<br>
+        <b>UMAP Y:</b> 0.937780499458313<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#176</styleUrl>
+                <Point id="174">
+                    <coordinates>-70.95285822222222,-34.47455688888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="180">
+                <name>DJI_0495.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0495.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474566, -70.952815<br>
+        <b>UMAP X:</b> 8.571208000183105<br>
+        <b>UMAP Y:</b> 3.1313557624816895<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#181</styleUrl>
+                <Point id="179">
+                    <coordinates>-70.95281491666667,-34.47456638888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="185">
+                <name>DJI_0496.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0496.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474570, -70.952801<br>
+        <b>UMAP X:</b> 10.713227272033691<br>
+        <b>UMAP Y:</b> 3.529195785522461<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#186</styleUrl>
+                <Point id="184">
+                    <coordinates>-70.95280141666667,-34.47457008333333,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="190">
+                <name>DJI_0497.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0497.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474573, -70.952793<br>
+        <b>UMAP X:</b> 9.75968074798584<br>
+        <b>UMAP Y:</b> 4.1968302726745605<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#191</styleUrl>
+                <Point id="189">
+                    <coordinates>-70.95279261111111,-34.474573,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="195">
+                <name>DJI_0498.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0498.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474754, -70.952116<br>
+        <b>UMAP X:</b> 9.821998596191406<br>
+        <b>UMAP Y:</b> 2.391185760498047<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#196</styleUrl>
+                <Point id="194">
+                    <coordinates>-70.95211552777778,-34.47475413888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="200">
+                <name>DJI_0499.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0499.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474760, -70.952076<br>
+        <b>UMAP X:</b> 9.903616905212402<br>
+        <b>UMAP Y:</b> 0.11560703068971634<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#201</styleUrl>
+                <Point id="199">
+                    <coordinates>-70.95207591666667,-34.47475997222222,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="205">
+                <name>DJI_0500.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0500.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474766, -70.952058<br>
+        <b>UMAP X:</b> 9.92209529876709<br>
+        <b>UMAP Y:</b> 0.4918372333049774<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#206</styleUrl>
+                <Point id="204">
+                    <coordinates>-70.95205833333334,-34.47476552777778,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="210">
+                <name>DJI_0501.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0501.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474783, -70.952001<br>
+        <b>UMAP X:</b> 10.24424934387207<br>
+        <b>UMAP Y:</b> 0.8089296817779541<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#211</styleUrl>
+                <Point id="209">
+                    <coordinates>-70.95200066666666,-34.47478277777778,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="215">
+                <name>DJI_0502.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0502.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474792, -70.951974<br>
+        <b>UMAP X:</b> 9.791714668273926<br>
+        <b>UMAP Y:</b> 0.755098283290863<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#216</styleUrl>
+                <Point id="214">
+                    <coordinates>-70.95197438888889,-34.474791555555555,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="220">
+                <name>DJI_0503.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0503.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474802, -70.951937<br>
+        <b>UMAP X:</b> 9.927791595458984<br>
+        <b>UMAP Y:</b> 2.0679361820220947<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#221</styleUrl>
+                <Point id="219">
+                    <coordinates>-70.951937,-34.474801750000005,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="225">
+                <name>DJI_0504.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0504.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474806, -70.951914<br>
+        <b>UMAP X:</b> 9.65493392944336<br>
+        <b>UMAP Y:</b> 3.2686147689819336<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#226</styleUrl>
+                <Point id="224">
+                    <coordinates>-70.95191447222223,-34.47480636111111,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="230">
+                <name>DJI_0505.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0505.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474818, -70.951871<br>
+        <b>UMAP X:</b> 10.184042930603027<br>
+        <b>UMAP Y:</b> 0.9013072848320007<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#231</styleUrl>
+                <Point id="229">
+                    <coordinates>-70.95187105555556,-34.47481777777778,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="235">
+                <name>DJI_0506.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0506.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474829, -70.951831<br>
+        <b>UMAP X:</b> 10.40589714050293<br>
+        <b>UMAP Y:</b> 0.6266935467720032<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#236</styleUrl>
+                <Point id="234">
+                    <coordinates>-70.95183052777779,-34.474828611111114,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="240">
+                <name>DJI_0507.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0507.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474844, -70.951769<br>
+        <b>UMAP X:</b> 10.278314590454102<br>
+        <b>UMAP Y:</b> 1.2405967712402344<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#241</styleUrl>
+                <Point id="239">
+                    <coordinates>-70.95176905555556,-34.474844000000004,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="245">
+                <name>DJI_0508.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0508.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474448, -70.952896<br>
+        <b>UMAP X:</b> 9.45112419128418<br>
+        <b>UMAP Y:</b> 0.11538179218769073<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#246</styleUrl>
+                <Point id="244">
+                    <coordinates>-70.95289641666668,-34.47444822222222,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="255">
+                <name>DJI_0510.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0510.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474452, -70.952879<br>
+        <b>UMAP X:</b> 10.83487606048584<br>
+        <b>UMAP Y:</b> 0.21528145670890808<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#256</styleUrl>
+                <Point id="254">
+                    <coordinates>-70.95287858333333,-34.47445225,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="260">
+                <name>DJI_0511.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0511.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474453, -70.952873<br>
+        <b>UMAP X:</b> 8.30530071258545<br>
+        <b>UMAP Y:</b> 0.17266279458999634<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#261</styleUrl>
+                <Point id="259">
+                    <coordinates>-70.95287277777778,-34.47445266666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="265">
+                <name>DJI_0512.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0512.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474456, -70.952859<br>
+        <b>UMAP X:</b> 8.244168281555176<br>
+        <b>UMAP Y:</b> 3.8071370124816895<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#266</styleUrl>
+                <Point id="264">
+                    <coordinates>-70.95285905555556,-34.47445622222222,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="270">
+                <name>DJI_0514.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0514.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474462, -70.952842<br>
+        <b>UMAP X:</b> 7.0829997062683105<br>
+        <b>UMAP Y:</b> 2.339165687561035<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#271</styleUrl>
+                <Point id="269">
+                    <coordinates>-70.95284236111111,-34.47446163888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="275">
+                <name>DJI_0515.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0515.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474466, -70.952831<br>
+        <b>UMAP X:</b> 6.829310894012451<br>
+        <b>UMAP Y:</b> 2.333148241043091<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#276</styleUrl>
+                <Point id="274">
+                    <coordinates>-70.9528313888889,-34.47446566666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="280">
+                <name>DJI_0516.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0516.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474477, -70.952779<br>
+        <b>UMAP X:</b> 6.959551811218262<br>
+        <b>UMAP Y:</b> 2.737339973449707<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#281</styleUrl>
+                <Point id="279">
+                    <coordinates>-70.95277877777778,-34.47447730555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="285">
+                <name>DJI_0517.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0517.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474501, -70.952697<br>
+        <b>UMAP X:</b> 8.111783981323242<br>
+        <b>UMAP Y:</b> 0.37792113423347473<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#286</styleUrl>
+                <Point id="284">
+                    <coordinates>-70.95269675,-34.474500722222224,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="290">
+                <name>DJI_0518.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0518.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474504, -70.952688<br>
+        <b>UMAP X:</b> 7.7227349281311035<br>
+        <b>UMAP Y:</b> 0.6903634071350098<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#291</styleUrl>
+                <Point id="289">
+                    <coordinates>-70.95268763888889,-34.47450394444444,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="295">
+                <name>DJI_0519.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0519.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474507, -70.952683<br>
+        <b>UMAP X:</b> 7.176037788391113<br>
+        <b>UMAP Y:</b> 1.3330869674682617<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#296</styleUrl>
+                <Point id="294">
+                    <coordinates>-70.95268255555555,-34.474506500000004,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="300">
+                <name>DJI_0520.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0520.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474507, -70.952675<br>
+        <b>UMAP X:</b> 6.833843231201172<br>
+        <b>UMAP Y:</b> 1.5459073781967163<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#301</styleUrl>
+                <Point id="299">
+                    <coordinates>-70.9526746388889,-34.474507305555555,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="305">
+                <name>DJI_0521.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0521.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474511, -70.952664<br>
+        <b>UMAP X:</b> 7.993314266204834<br>
+        <b>UMAP Y:</b> 3.7048065662384033<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#306</styleUrl>
+                <Point id="304">
+                    <coordinates>-70.9526645,-34.47451086111111,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="310">
+                <name>DJI_0522.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0522.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474500, -70.952653<br>
+        <b>UMAP X:</b> 7.23279333114624<br>
+        <b>UMAP Y:</b> 1.4197607040405273<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#311</styleUrl>
+                <Point id="309">
+                    <coordinates>-70.95265275,-34.47449988888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="315">
+                <name>DJI_0523.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0523.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474495, -70.952672<br>
+        <b>UMAP X:</b> 6.925459861755371<br>
+        <b>UMAP Y:</b> 1.6190478801727295<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#316</styleUrl>
+                <Point id="314">
+                    <coordinates>-70.95267180555555,-34.474494722222225,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="320">
+                <name>DJI_0524.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0524.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474491, -70.952682<br>
+        <b>UMAP X:</b> 7.882782459259033<br>
+        <b>UMAP Y:</b> 1.8273648023605347<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#321</styleUrl>
+                <Point id="319">
+                    <coordinates>-70.95268183333333,-34.47449091666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="325">
+                <name>DJI_0525.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0525.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474488, -70.952691<br>
+        <b>UMAP X:</b> 7.4112043380737305<br>
+        <b>UMAP Y:</b> 2.657130241394043<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#326</styleUrl>
+                <Point id="324">
+                    <coordinates>-70.95269102777777,-34.47448766666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="330">
+                <name>DJI_0526.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0526.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474486, -70.952705<br>
+        <b>UMAP X:</b> 7.5425004959106445<br>
+        <b>UMAP Y:</b> 1.081583857536316<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#331</styleUrl>
+                <Point id="329">
+                    <coordinates>-70.95270533333334,-34.47448608333333,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="335">
+                <name>DJI_0527.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0527.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474483, -70.952713<br>
+        <b>UMAP X:</b> 7.317399501800537<br>
+        <b>UMAP Y:</b> 2.0775060653686523<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#336</styleUrl>
+                <Point id="334">
+                    <coordinates>-70.95271297222223,-34.47448311111111,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="340">
+                <name>DJI_0528.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0528.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474478, -70.952728<br>
+        <b>UMAP X:</b> 7.608798027038574<br>
+        <b>UMAP Y:</b> 1.6167912483215332<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#341</styleUrl>
+                <Point id="339">
+                    <coordinates>-70.95272758333334,-34.47447833333334,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="345">
+                <name>DJI_0529.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0529.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474486, -70.952739<br>
+        <b>UMAP X:</b> 9.539663314819336<br>
+        <b>UMAP Y:</b> 3.0253396034240723<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#346</styleUrl>
+                <Point id="344">
+                    <coordinates>-70.95273888888889,-34.47448605555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="350">
+                <name>DJI_0530.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0530.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474485, -70.952738<br>
+        <b>UMAP X:</b> 9.677478790283203<br>
+        <b>UMAP Y:</b> 2.949232339859009<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#351</styleUrl>
+                <Point id="349">
+                    <coordinates>-70.95273775,-34.47448472222222,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="355">
+                <name>DJI_0531.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0531.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474475, -70.952742<br>
+        <b>UMAP X:</b> 8.455939292907715<br>
+        <b>UMAP Y:</b> 1.468563199043274<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#356</styleUrl>
+                <Point id="354">
+                    <coordinates>-70.95274244444445,-34.47447488888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="360">
+                <name>DJI_0532.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0532.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474472, -70.952752<br>
+        <b>UMAP X:</b> 7.624752521514893<br>
+        <b>UMAP Y:</b> 2.7204041481018066<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#361</styleUrl>
+                <Point id="359">
+                    <coordinates>-70.95275222222223,-34.474471666666666,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="365">
+                <name>DJI_0533.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0533.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474469, -70.952759<br>
+        <b>UMAP X:</b> 7.91356897354126<br>
+        <b>UMAP Y:</b> 3.3702993392944336<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#366</styleUrl>
+                <Point id="364">
+                    <coordinates>-70.95275905555556,-34.47446869444445,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="370">
+                <name>DJI_0534.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0534.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474469, -70.952764<br>
+        <b>UMAP X:</b> 8.906005859375<br>
+        <b>UMAP Y:</b> 2.971208095550537<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#371</styleUrl>
+                <Point id="369">
+                    <coordinates>-70.95276383333334,-34.474468611111114,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="375">
+                <name>DJI_0535.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0535.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474467, -70.952768<br>
+        <b>UMAP X:</b> 8.244625091552734<br>
+        <b>UMAP Y:</b> 3.2656376361846924<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#376</styleUrl>
+                <Point id="374">
+                    <coordinates>-70.95276822222222,-34.47446744444445,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="380">
+                <name>DJI_0536.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0536.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474466, -70.952777<br>
+        <b>UMAP X:</b> 8.409395217895508<br>
+        <b>UMAP Y:</b> 1.7532230615615845<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#381</styleUrl>
+                <Point id="379">
+                    <coordinates>-70.95277663888889,-34.47446591666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="385">
+                <name>DJI_0537.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0537.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474462, -70.952786<br>
+        <b>UMAP X:</b> 8.88581657409668<br>
+        <b>UMAP Y:</b> 2.6394171714782715<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#386</styleUrl>
+                <Point id="384">
+                    <coordinates>-70.95278608333334,-34.47446238888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="390">
+                <name>DJI_0538.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0538.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474463, -70.952788<br>
+        <b>UMAP X:</b> 7.8635334968566895<br>
+        <b>UMAP Y:</b> 2.136061906814575<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#391</styleUrl>
+                <Point id="389">
+                    <coordinates>-70.95278822222222,-34.47446263888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="395">
+                <name>DJI_0539.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0539.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474460, -70.952794<br>
+        <b>UMAP X:</b> 8.096977233886719<br>
+        <b>UMAP Y:</b> 2.328331470489502<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#396</styleUrl>
+                <Point id="394">
+                    <coordinates>-70.95279419444445,-34.474460416666666,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="400">
+                <name>DJI_0540.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0540.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474460, -70.952802<br>
+        <b>UMAP X:</b> 8.04684829711914<br>
+        <b>UMAP Y:</b> 2.0592353343963623<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#401</styleUrl>
+                <Point id="399">
+                    <coordinates>-70.95280244444444,-34.4744595,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="405">
+                <name>DJI_0541.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0541.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474454, -70.952817<br>
+        <b>UMAP X:</b> 8.468703269958496<br>
+        <b>UMAP Y:</b> 0.6082977056503296<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#406</styleUrl>
+                <Point id="404">
+                    <coordinates>-70.95281730555556,-34.474453611111116,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="410">
+                <name>DJI_0542.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0542.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474453, -70.952823<br>
+        <b>UMAP X:</b> 9.199858665466309<br>
+        <b>UMAP Y:</b> 0.241193488240242<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#411</styleUrl>
+                <Point id="409">
+                    <coordinates>-70.95282311111112,-34.47445341666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="415">
+                <name>DJI_0543.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0543.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474449, -70.952832<br>
+        <b>UMAP X:</b> 7.32810640335083<br>
+        <b>UMAP Y:</b> 1.8433433771133423<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#416</styleUrl>
+                <Point id="414">
+                    <coordinates>-70.95283186111111,-34.474449472222226,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="420">
+                <name>DJI_0544.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0544.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474443, -70.952860<br>
+        <b>UMAP X:</b> 9.014360427856445<br>
+        <b>UMAP Y:</b> 1.9530843496322632<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#421</styleUrl>
+                <Point id="419">
+                    <coordinates>-70.95286041666667,-34.47444266666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="425">
+                <name>DJI_0545.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0545.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474435, -70.952890<br>
+        <b>UMAP X:</b> 8.07362174987793<br>
+        <b>UMAP Y:</b> 1.4057763814926147<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#426</styleUrl>
+                <Point id="424">
+                    <coordinates>-70.95288983333333,-34.47443483333333,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="430">
+                <name>DJI_0546.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0546.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474433, -70.952900<br>
+        <b>UMAP X:</b> 6.961845874786377<br>
+        <b>UMAP Y:</b> 2.0715198516845703<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#431</styleUrl>
+                <Point id="429">
+                    <coordinates>-70.95290047222223,-34.474433194444444,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="435">
+                <name>DJI_0547.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0547.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474417, -70.952929<br>
+        <b>UMAP X:</b> 8.630108833312988<br>
+        <b>UMAP Y:</b> 3.4857959747314453<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#436</styleUrl>
+                <Point id="434">
+                    <coordinates>-70.95292875,-34.47441727777778,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="440">
+                <name>DJI_0548.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0548.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474422, -70.952929<br>
+        <b>UMAP X:</b> 8.983492851257324<br>
+        <b>UMAP Y:</b> 0.6131487488746643<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#441</styleUrl>
+                <Point id="439">
+                    <coordinates>-70.95292916666666,-34.47442216666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="445">
+                <name>DJI_0549.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0549.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474425, -70.952930<br>
+        <b>UMAP X:</b> 8.881505966186523<br>
+        <b>UMAP Y:</b> 1.5597286224365234<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#446</styleUrl>
+                <Point id="444">
+                    <coordinates>-70.95293002777778,-34.47442455555556,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="450">
+                <name>DJI_0550.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0550.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474423, -70.952939<br>
+        <b>UMAP X:</b> 10.047021865844727<br>
+        <b>UMAP Y:</b> 3.8914670944213867<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#451</styleUrl>
+                <Point id="449">
+                    <coordinates>-70.95293869444444,-34.474422861111115,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="455">
+                <name>DJI_0551.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0551.JPG<br>
+        <b>Category:</b> Close-up/Inspection<br>
+        <b>Coordinates:</b> -34.474418, -70.952951<br>
+        <b>UMAP X:</b> 8.710058212280273<br>
+        <b>UMAP Y:</b> 3.654919385910034<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#456</styleUrl>
+                <Point id="454">
+                    <coordinates>-70.95295119444445,-34.47441772222223,0.0</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+        <Folder id="48">
+            <Style id="51">
+                <IconStyle id="52">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="53">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="251">
+                <IconStyle id="252">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="253">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="461">
+                <IconStyle id="462">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="463">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="466">
+                <IconStyle id="467">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="468">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="471">
+                <IconStyle id="472">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="473">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="476">
+                <IconStyle id="477">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="478">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="481">
+                <IconStyle id="482">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="483">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <Style id="486">
+                <IconStyle id="487">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <scale>1</scale>
+                    <heading>0</heading>
+                    <Icon id="488">
+                        <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+                    </Icon>
+                </IconStyle>
+            </Style>
+            <name>Overview/High-altitude</name>
+            <Placemark id="50">
+                <name>DJI_0469.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0469.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474752, -70.952683<br>
+        <b>UMAP X:</b> 9.873477935791016<br>
+        <b>UMAP Y:</b> -0.15364514291286469<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#51</styleUrl>
+                <Point id="49">
+                    <coordinates>-70.95268280555555,-34.47475213888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="250">
+                <name>DJI_0509.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0509.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474451, -70.952885<br>
+        <b>UMAP X:</b> 10.503623008728027<br>
+        <b>UMAP Y:</b> -0.13237540423870087<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#251</styleUrl>
+                <Point id="249">
+                    <coordinates>-70.95288525000001,-34.474450833333336,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="460">
+                <name>DJI_0552.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0552.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474408, -70.952907<br>
+        <b>UMAP X:</b> 11.475889205932617<br>
+        <b>UMAP Y:</b> -0.6592828631401062<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#461</styleUrl>
+                <Point id="459">
+                    <coordinates>-70.95290655555556,-34.47440758333334,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="465">
+                <name>DJI_0553.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0553.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474401, -70.952886<br>
+        <b>UMAP X:</b> 11.646614074707031<br>
+        <b>UMAP Y:</b> -0.7293726801872253<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#466</styleUrl>
+                <Point id="464">
+                    <coordinates>-70.95288552777778,-34.47440108333333,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="470">
+                <name>DJI_0554.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0554.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474480, -70.952432<br>
+        <b>UMAP X:</b> 11.58593463897705<br>
+        <b>UMAP Y:</b> -0.6789262294769287<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#471</styleUrl>
+                <Point id="469">
+                    <coordinates>-70.95243233333333,-34.47447966666667,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="475">
+                <name>DJI_0555.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0555.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474525, -70.951894<br>
+        <b>UMAP X:</b> 11.665444374084473<br>
+        <b>UMAP Y:</b> -0.7081236839294434<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#476</styleUrl>
+                <Point id="474">
+                    <coordinates>-70.95189433333334,-34.47452525,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="480">
+                <name>DJI_0556.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0556.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474716, -70.951020<br>
+        <b>UMAP X:</b> 11.79627799987793<br>
+        <b>UMAP Y:</b> -0.8726346492767334<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#481</styleUrl>
+                <Point id="479">
+                    <coordinates>-70.95101961111111,-34.47471638888889,0.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="485">
+                <name>DJI_0557.JPG</name>
+                <description>
+                    
+        
+<![CDATA[
+        <b>File:</b> DJI_0557.JPG<br>
+        <b>Category:</b> Overview/High-altitude<br>
+        <b>Coordinates:</b> -34.474840, -70.950338<br>
+        <b>UMAP X:</b> 11.645715713500977<br>
+        <b>UMAP Y:</b> -0.5332303643226624<br>
+        ]]>                    
+        
+                </description>
+                <styleUrl>#486</styleUrl>
+                <Point id="484">
+                    <coordinates>-70.95033772222223,-34.4748405,0.0</coordinates>
+                </Point>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>

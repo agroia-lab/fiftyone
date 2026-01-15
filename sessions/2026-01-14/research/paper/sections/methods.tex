@@ -1,0 +1,207 @@
+% =============================================================================
+% MATERIALS AND METHODS
+% Status: Updated for drone + ground camera analysis v0.4
+% =============================================================================
+
+\subsection{Study Areas and Data Collection}
+
+\subsubsection{Field Sites}
+
+Four agricultural field sites in central Chile were surveyed:
+
+\begin{table}[H]
+\centering
+\caption{Study site characteristics}
+\label{tab:sites}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Site} & \textbf{GPS Center} & \textbf{Crop} & \textbf{Survey Date} \\
+\midrule
+Santa Ines & -34.4746, -70.9516 & Tomato & January 2026 \\
+La Capilla & -34.4722, -70.9337 & Tomato & January 2026 \\
+Apalta & -34.4743, -70.9531 & Tomato & January 2026 \\
+Camarico & -34.3580, -70.8918 & Tomato & January 2026 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Capture Modalities}
+
+Two distinct capture modalities were employed to document field conditions:
+
+\begin{enumerate}
+    \item \textbf{Drone (Aerial)}: DJI drones capturing overhead imagery at varying altitudes
+    \item \textbf{Ground Camera (Celular)}: Mobile phones capturing ground-level imagery while walking through fields
+\end{enumerate}
+
+\observation{The combination of drone and ground camera imagery provides complementary perspectives---aerial for field-scale patterns, ground-level for plant-specific detail}
+
+\subsubsection{Drone Imagery Datasets}
+
+\begin{table}[H]
+\centering
+\caption{Drone imagery dataset characteristics}
+\label{tab:drone_data}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Site} & \textbf{Images} & \textbf{Format} & \textbf{Resolution} & \textbf{Total Size} \\
+\midrule
+Santa Ines & 97 & JPEG & 5472$\times$3648 & $\sim$1.1 GB \\
+La Capilla & 111 & JPEG & 5472$\times$3648 & $\sim$1.4 GB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Drone imagery characteristics:
+\begin{itemize}
+    \item \textbf{Platform}: DJI drone with integrated GPS
+    \item \textbf{File format}: JPEG, approximately 10-13 MB per image
+    \item \textbf{Embedded metadata}: GPS coordinates, timestamp, altitude, camera settings
+    \item \textbf{Perspective}: Top-down aerial view at varying altitudes (close-up to overview)
+\end{itemize}
+
+\subsubsection{Ground Camera Imagery Datasets}
+
+\begin{table}[H]
+\centering
+\caption{Ground camera imagery dataset characteristics}
+\label{tab:ground_data}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Site} & \textbf{Images} & \textbf{Format} & \textbf{Device} & \textbf{GPS Coverage} \\
+\midrule
+Santa Ines & 635 & JPEG & Android & 100\% (635/635) \\
+La Capilla & 822 & JPEG & Android & 97\% (799/822) \\
+Apalta & 961 & HEIC & iPhone XR & 99.9\% (960/961) \\
+Camarico & 33 & JPEG & Android & 82\% (27/33) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ground camera imagery characteristics:
+\begin{itemize}
+    \item \textbf{Platform}: Mobile phones (Android and iPhone)
+    \item \textbf{File format}: JPEG (Android) or HEIC (iPhone)
+    \item \textbf{Typical size}: 5-7 MB per image (JPEG), 2-3 MB per image (HEIC)
+    \item \textbf{Embedded metadata}: GPS coordinates, timestamp, device info
+    \item \textbf{Perspective}: Ground-level, horizontal view of crop rows and individual plants
+\end{itemize}
+
+\finding{Ground camera datasets are significantly larger (635-961 images) than drone datasets (97-111 images), reflecting the different data collection workflows---walking through fields vs. programmed flight paths}
+
+\subsection{Software Environment}
+
+\subsubsection{Dataset Management}
+FiftyOne v1.12.0 was used for dataset management, embedding computation, and visualization. FiftyOne provides:
+\begin{itemize}
+    \item Efficient handling of large image datasets (2000+ images across all sites)
+    \item Built-in integration with embedding models
+    \item Interactive visualization tools
+    \item Similarity search functionality
+\end{itemize}
+
+\subsubsection{Analysis Tools}
+\begin{itemize}
+    \item \textbf{Python 3.12}: Data processing and embedding computation
+    \item \textbf{R 4.3.3}: Statistical analysis and visualization (ggplot2)
+    \item \textbf{PyTorch}: Deep learning backend for CLIP model
+    \item \textbf{PIL/Pillow}: EXIF metadata extraction (JPEG)
+    \item \textbf{pillow-heif}: HEIC format support for iPhone images
+\end{itemize}
+
+\subsection{Embedding Computation}
+
+\subsubsection{Model Selection}
+CLIP ViT-B/32 (Vision Transformer, Base, 32$\times$32 patches) was selected for embedding computation. This model:
+\begin{itemize}
+    \item Provides 512-dimensional embeddings per image
+    \item Was pretrained on 400M image-text pairs
+    \item Offers good balance of computational efficiency and semantic richness
+    \item Requires no domain-specific fine-tuning
+\end{itemize}
+
+\subsubsection{Dimensionality Reduction}
+UMAP (Uniform Manifold Approximation and Projection) was applied to reduce embeddings from 512D to 2D for visualization:
+
+\begin{equation}
+    \mathbf{z}_i = \text{UMAP}(\mathbf{e}_i), \quad \mathbf{e}_i \in \mathbb{R}^{512}, \quad \mathbf{z}_i \in \mathbb{R}^{2}
+\end{equation}
+
+UMAP was run with default parameters (n\_neighbors=15, min\_dist=0.1, metric=euclidean).
+
+\subsubsection{Implementation}
+
+The same pipeline was applied to all datasets (both drone and ground camera):
+
+\begin{lstlisting}[language=Python, caption=Embedding computation pipeline]
+import fiftyone as fo
+import fiftyone.brain as fob
+
+# Create dataset from images
+dataset = fo.Dataset.from_images_dir(path, name="site_name")
+
+# Compute CLIP embeddings with UMAP projection
+fob.compute_visualization(
+    dataset,
+    brain_key="clip_viz",
+    model="clip-vit-base32-torch",
+    method="umap"
+)
+
+# Compute similarity index for retrieval
+fob.compute_similarity(
+    dataset,
+    brain_key="clip_similarity",
+    embeddings="clip_viz"
+)
+\end{lstlisting}
+
+\subsection{Clustering and Classification}
+
+Image clusters were identified through visual inspection of the UMAP projection at each site. Clusters were characterized by:
+
+\begin{enumerate}
+    \item \textbf{Visual inspection}: Examining representative images from each region
+    \item \textbf{Centroid analysis}: Computing cluster centroids and inter-cluster distances
+    \item \textbf{Manual tagging}: Assigning semantic labels based on observed visual characteristics
+\end{enumerate}
+
+\subsection{GPS Extraction}
+
+GPS coordinates were extracted from EXIF metadata embedded in each image:
+
+\begin{itemize}
+    \item \textbf{JPEG files}: Standard EXIF extraction using PIL/Pillow
+    \item \textbf{HEIC files}: Extended extraction using pillow-heif with IFD GPS access
+\end{itemize}
+
+Coordinates were converted from degrees-minutes-seconds to decimal degrees for analysis and exported to KML/KMZ files for visualization in Google Earth.
+
+\subsection{Geospatial Data Export}
+
+For each dataset, geospatial files were generated:
+\begin{itemize}
+    \item \textbf{KML/KMZ}: Google Earth compatible placemarks with photo metadata
+    \item \textbf{Shapefile (UTM 19S)}: GIS-compatible format in EPSG:32719 projection
+\end{itemize}
+
+\subsection{Similarity Network Analysis}
+
+To quantify cluster structure, a k-nearest neighbor graph was constructed for each dataset:
+
+\begin{itemize}
+    \item Each image connected to its $k=3$ nearest neighbors in embedding space
+    \item Distance metric: Euclidean distance in 2D UMAP space
+    \item Edge classification: within-category vs. cross-category connections
+\end{itemize}
+
+\subsection{Statistical Analysis}
+
+Cluster cohesion was evaluated using:
+\begin{itemize}
+    \item Mean distance to $k=5$ nearest neighbors
+    \item Inter-cluster centroid distance
+    \item Proportion of cross-category edges in similarity network
+\end{itemize}
+
+All statistical analyses and visualizations were performed in R using ggplot2, with consistent methodology applied across all sites and capture modalities.

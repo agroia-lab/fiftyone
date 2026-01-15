@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="11977">
+        <Style id="11980">
+            <IconStyle id="11981">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="11982">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="11985">
+            <IconStyle id="11986">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="11987">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="11990">
+            <IconStyle id="11991">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="11992">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="11995">
+            <IconStyle id="11996">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="11997">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12000">
+            <IconStyle id="12001">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12002">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12005">
+            <IconStyle id="12006">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12007">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12010">
+            <IconStyle id="12011">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12012">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12015">
+            <IconStyle id="12016">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12017">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12020">
+            <IconStyle id="12021">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12022">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12025">
+            <IconStyle id="12026">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12027">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12030">
+            <IconStyle id="12031">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12032">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12035">
+            <IconStyle id="12036">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12037">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12040">
+            <IconStyle id="12041">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12042">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12045">
+            <IconStyle id="12046">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12047">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12050">
+            <IconStyle id="12051">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12052">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12055">
+            <IconStyle id="12056">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12057">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12060">
+            <IconStyle id="12061">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12062">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12065">
+            <IconStyle id="12066">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12067">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12070">
+            <IconStyle id="12071">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12072">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12075">
+            <IconStyle id="12076">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12077">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12080">
+            <IconStyle id="12081">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12082">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12085">
+            <IconStyle id="12086">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12087">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12090">
+            <IconStyle id="12091">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12092">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12095">
+            <IconStyle id="12096">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12097">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12100">
+            <IconStyle id="12101">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12102">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12105">
+            <IconStyle id="12106">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12107">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="12110">
+            <IconStyle id="12111">
+                <color>ff800080</color>
+                <colorMode>normal</colorMode>
+                <scale>0.8</scale>
+                <heading>0</heading>
+                <Icon id="12112">
+                    <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <name>Camarico (Ground Camera)</name>
+        <Placemark id="11979">
+            <name>20260106_113210.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113210.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358125, -70.891974<br>
+        <b>UMAP X:</b> 7.8825336<br>
+        <b>UMAP Y:</b> -1.0744092<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#11980</styleUrl>
+            <Point id="11978">
+                <coordinates>-70.89197439972223,-34.358124799722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11984">
+            <name>20260106_113308.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113308.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358241, -70.892082<br>
+        <b>UMAP X:</b> 8.378523<br>
+        <b>UMAP Y:</b> 0.25767705<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#11985</styleUrl>
+            <Point id="11983">
+                <coordinates>-70.89208189972223,-34.3582407,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11989">
+            <name>20260106_113312.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113312.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358241, -70.892082<br>
+        <b>UMAP X:</b> 8.627548<br>
+        <b>UMAP Y:</b> -1.4051256<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#11990</styleUrl>
+            <Point id="11988">
+                <coordinates>-70.8920817,-34.3582405,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11994">
+            <name>20260106_113326.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113326.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358291, -70.892115<br>
+        <b>UMAP X:</b> 9.087815<br>
+        <b>UMAP Y:</b> 1.4876837<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#11995</styleUrl>
+            <Point id="11993">
+                <coordinates>-70.892115,-34.3582909,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11999">
+            <name>20260106_113434.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113434.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358289, -70.892124<br>
+        <b>UMAP X:</b> 9.749806<br>
+        <b>UMAP Y:</b> -0.54211414<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12000</styleUrl>
+            <Point id="11998">
+                <coordinates>-70.89212399972223,-34.358289499722225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12004">
+            <name>20260106_113447.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113447.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358241, -70.892102<br>
+        <b>UMAP X:</b> 7.535101<br>
+        <b>UMAP Y:</b> 0.86626333<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12005</styleUrl>
+            <Point id="12003">
+                <coordinates>-70.89210239972223,-34.358241399722225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12009">
+            <name>20260106_113451.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113451.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358232, -70.892088<br>
+        <b>UMAP X:</b> 7.8347497<br>
+        <b>UMAP Y:</b> 1.3522382<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12010</styleUrl>
+            <Point id="12008">
+                <coordinates>-70.89208829972223,-34.358231799722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12014">
+            <name>20260106_113532.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113532.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358052, -70.891977<br>
+        <b>UMAP X:</b> 9.241682<br>
+        <b>UMAP Y:</b> -1.3301795<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12015</styleUrl>
+            <Point id="12013">
+                <coordinates>-70.8919774,-34.358052,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12019">
+            <name>20260106_113545.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113545.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358052, -70.891977<br>
+        <b>UMAP X:</b> 9.292653<br>
+        <b>UMAP Y:</b> -0.7308112<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12020</styleUrl>
+            <Point id="12018">
+                <coordinates>-70.89197699972223,-34.35805249972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12024">
+            <name>20260106_113559.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113559.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358052, -70.891977<br>
+        <b>UMAP X:</b> 7.2188597<br>
+        <b>UMAP Y:</b> 1.3541336<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12025</styleUrl>
+            <Point id="12023">
+                <coordinates>-70.89197699972223,-34.35805249972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12029">
+            <name>20260106_113604.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113604.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358052, -70.891977<br>
+        <b>UMAP X:</b> 7.880994<br>
+        <b>UMAP Y:</b> 0.52150965<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12030</styleUrl>
+            <Point id="12028">
+                <coordinates>-70.89197699972223,-34.35805249972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12034">
+            <name>20260106_113619.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113619.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358035, -70.891970<br>
+        <b>UMAP X:</b> 6.857072<br>
+        <b>UMAP Y:</b> 1.5154204<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12035</styleUrl>
+            <Point id="12033">
+                <coordinates>-70.8919699,-34.358034799722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12039">
+            <name>20260106_113628.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113628.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358035, -70.891970<br>
+        <b>UMAP X:</b> 8.802614<br>
+        <b>UMAP Y:</b> -0.69408244<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12040</styleUrl>
+            <Point id="12038">
+                <coordinates>-70.8919699,-34.358034799722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12044">
+            <name>20260106_113633.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113633.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.358035, -70.891970<br>
+        <b>UMAP X:</b> 8.573049<br>
+        <b>UMAP Y:</b> -2.075584<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12045</styleUrl>
+            <Point id="12043">
+                <coordinates>-70.8919699,-34.358034799722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12049">
+            <name>20260106_113654.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113654.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357953, -70.891888<br>
+        <b>UMAP X:</b> 8.87814<br>
+        <b>UMAP Y:</b> -1.8168641<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12050</styleUrl>
+            <Point id="12048">
+                <coordinates>-70.89188849972223,-34.357953199722225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12054">
+            <name>20260106_113709.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113709.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357953, -70.891888<br>
+        <b>UMAP X:</b> 6.9586606<br>
+        <b>UMAP Y:</b> 0.14968511<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12055</styleUrl>
+            <Point id="12053">
+                <coordinates>-70.89188799972223,-34.357953299722226,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12059">
+            <name>20260106_113713.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113713.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357941, -70.891894<br>
+        <b>UMAP X:</b> 7.229029<br>
+        <b>UMAP Y:</b> 1.8415495<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12060</styleUrl>
+            <Point id="12058">
+                <coordinates>-70.8918941,-34.35794059972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12064">
+            <name>20260106_113725.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113725.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357933, -70.891882<br>
+        <b>UMAP X:</b> 9.325149<br>
+        <b>UMAP Y:</b> -2.0076835<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12065</styleUrl>
+            <Point id="12063">
+                <coordinates>-70.89188169972223,-34.35793329972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12069">
+            <name>20260106_113730.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113730.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357920, -70.891872<br>
+        <b>UMAP X:</b> 8.299587<br>
+        <b>UMAP Y:</b> -0.60978884<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12070</styleUrl>
+            <Point id="12068">
+                <coordinates>-70.8918716,-34.3579201,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12074">
+            <name>20260106_113737.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113737.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357899, -70.891854<br>
+        <b>UMAP X:</b> 9.444312<br>
+        <b>UMAP Y:</b> 1.5786186<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12075</styleUrl>
+            <Point id="12073">
+                <coordinates>-70.8918539,-34.3578989,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12079">
+            <name>20260106_113740.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113740.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357889, -70.891842<br>
+        <b>UMAP X:</b> 9.823883<br>
+        <b>UMAP Y:</b> -0.06504915<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12080</styleUrl>
+            <Point id="12078">
+                <coordinates>-70.8918419,-34.357889399722225,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12084">
+            <name>20260106_113808.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113808.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357768, -70.891770<br>
+        <b>UMAP X:</b> 8.9739065<br>
+        <b>UMAP Y:</b> 1.8248799<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12085</styleUrl>
+            <Point id="12083">
+                <coordinates>-70.89177019972223,-34.3577675,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12089">
+            <name>20260106_113843.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113843.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357779, -70.891785<br>
+        <b>UMAP X:</b> 9.906164<br>
+        <b>UMAP Y:</b> -1.2159919<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12090</styleUrl>
+            <Point id="12088">
+                <coordinates>-70.8917851,-34.35777949972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12094">
+            <name>20260106_113916.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113916.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357779, -70.891785<br>
+        <b>UMAP X:</b> 9.502982<br>
+        <b>UMAP Y:</b> 0.31159347<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12095</styleUrl>
+            <Point id="12093">
+                <coordinates>-70.8917851,-34.35777949972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12099">
+            <name>20260106_113933.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_113933.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357779, -70.891785<br>
+        <b>UMAP X:</b> 9.849774<br>
+        <b>UMAP Y:</b> -1.5623187<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12100</styleUrl>
+            <Point id="12098">
+                <coordinates>-70.8917851,-34.35777949972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12104">
+            <name>20260106_114000.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_114000.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357779, -70.891785<br>
+        <b>UMAP X:</b> 8.136732<br>
+        <b>UMAP Y:</b> 1.8555921<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12105</styleUrl>
+            <Point id="12103">
+                <coordinates>-70.8917851,-34.35777949972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="12109">
+            <name>20260106_114005.jpg</name>
+            <description>
+                
+        
+<![CDATA[
+        <b>File:</b> 20260106_114005.jpg<br>
+        <b>Site:</b> Camarico<br>
+        <b>Camera:</b> Ground (Celular)<br>
+        <b>Coordinates:</b> -34.357779, -70.891785<br>
+        <b>UMAP X:</b> 7.6408396<br>
+        <b>UMAP Y:</b> 1.7865345<br>
+        ]]>                
+        
+            </description>
+            <styleUrl>#12110</styleUrl>
+            <Point id="12108">
+                <coordinates>-70.8917851,-34.35777949972223,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,67 @@
+% =============================================================================
+% OBSERVATION LOG
+% Status: ACTIVE - Updated throughout research process
+% =============================================================================
+
+% This appendix maintains a chronological log of observations made during
+% the research process. Observations are tagged with dates and linked to
+% relevant figures/sections where applicable.
+
+\subsection*{Log Format}
+Each observation entry includes:
+\begin{itemize}
+    \item \textbf{Date}: When the observation was made
+    \item \textbf{Category}: Type of observation (data, method, result, idea)
+    \item \textbf{Description}: The observation itself
+    \item \textbf{Link}: Reference to relevant section, figure, or data
+\end{itemize}
+
+\hrulefill
+
+\subsection*{2026-01-13}
+
+\begin{description}
+    \item[OBS-001] \textbf{[Data]} Dataset loaded successfully: 97 DJI drone images from Santa Ines field, ~10-12 MB each.
+
+    \item[OBS-002] \textbf{[Result]} UMAP projection reveals clear bimodal structure---main cluster of 89 images and outlier cluster of 8 images at bottom-right of embedding space.
+
+    \item[OBS-003] \textbf{[Result]} Outlier images (DJI\_0469, DJI\_0509, DJI\_0552-0557) visually confirmed as high-altitude overview shots, distinct from close-up crop inspection images.
+
+    \item[OBS-004] \textbf{[Method]} CLIP embeddings capture altitude/scale differences effectively---semantic clustering emerges without altitude metadata being provided.
+\end{description}
+
+\subsection*{2026-01-14}
+
+\begin{description}
+    \item[OBS-005] \textbf{[Result]} Similarity index computed successfully. Query tests confirm semantically consistent retrieval---high-altitude queries return only high-altitude neighbors.
+
+    \item[OBS-006] \textbf{[Result]} Network analysis: 97.3\% of k-NN edges stay within category. Only 8/291 edges cross category boundary.
+
+    \item[OBS-007] \textbf{[Result]} Cluster cohesion asymmetry: high-altitude cluster is 35\% tighter (mean neighbor distance 0.276 vs 0.424). May indicate greater visual homogeneity of overview shots.
+
+    \item[OBS-008] \textbf{[Idea]} Cohesion metric could serve as diversity indicator---tight clusters = homogeneous content, diffuse clusters = varied content. Useful for coverage assessment.
+
+    \item[OBS-009] \textbf{[Method]} R/ggplot2 workflow established for reproducible analysis. Scripts: \texttt{analysis.R}, \texttt{similarity\_analysis.R}.
+\end{description}
+
+\hrulefill
+
+\subsection*{Template for Future Entries}
+
+\begin{description}
+    \item[OBS-XXX] \textbf{[Category]} Description of observation. \textit{See Section~X / Figure~X}
+\end{description}
+
+% =============================================================================
+% OBSERVATION INDEX BY CATEGORY
+% =============================================================================
+
+\subsection*{Index by Category}
+
+\textbf{Data observations:} OBS-001
+
+\textbf{Method observations:} OBS-004, OBS-009
+
+\textbf{Result observations:} OBS-002, OBS-003, OBS-005, OBS-006, OBS-007
+
+\textbf{Ideas/hypotheses:} OBS-008

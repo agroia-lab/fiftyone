@@ -1,0 +1,37 @@
+% =============================================================================
+% INTRODUCTION
+% Status: DRAFT - Framework established, needs literature review
+% =============================================================================
+
+\subsection{Background}
+
+Unmanned Aerial Vehicles (UAVs) have become essential tools in precision agriculture, enabling high-resolution monitoring of crop health, irrigation patterns, and field conditions. Modern drone surveys generate large volumes of imagery---often hundreds to thousands of images per flight session---creating significant data management challenges.
+
+\todo{Add citations: drone imagery in agriculture, data volume challenges}
+
+A typical agricultural drone survey may include:
+\begin{itemize}
+    \item \textbf{Systematic mapping flights}: High-altitude images for orthomosaic generation
+    \item \textbf{Targeted inspection flights}: Low-altitude close-ups of specific crop areas
+    \item \textbf{Oblique/transitional images}: Various angles during ascent/descent
+\end{itemize}
+
+Organizing this heterogeneous imagery typically requires manual review or relies solely on GPS metadata, which captures \emph{where} images were taken but not \emph{what} they contain semantically.
+
+\subsection{Vision-Language Models for Image Understanding}
+
+Recent advances in vision-language models, particularly CLIP (Contrastive Language-Image Pre-training), have demonstrated remarkable zero-shot capabilities for image understanding. These models learn joint embeddings of images and text, enabling semantic similarity comparisons without task-specific training.
+
+\observation{CLIP embeddings capture semantic content (altitude/purpose) rather than just spatial position---this is a key distinction from GPS-based organization}
+
+\subsection{Research Gap}
+
+While vision-language models have been extensively studied for general image classification and retrieval, their application to agricultural drone imagery organization remains underexplored. Specifically:
+
+\begin{enumerate}
+    \item Can pretrained models (without agricultural fine-tuning) meaningfully cluster drone imagery?
+    \item What semantic distinctions do these models capture in agricultural contexts?
+    \item How do embedding-based clusters compare to traditional metadata-based organization?
+\end{enumerate}
+
+\todo{Expand literature review: existing work on drone image organization, CLIP applications in remote sensing}

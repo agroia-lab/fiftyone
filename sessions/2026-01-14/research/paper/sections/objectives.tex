@@ -1,0 +1,34 @@
+% =============================================================================
+% OBJECTIVES
+% Status: DRAFT - Core objectives defined
+% =============================================================================
+
+\subsection{General Objective}
+
+To evaluate the effectiveness of vision-language embedding models for automatic semantic organization of agricultural drone imagery, with application to precision agriculture data management workflows.
+
+\subsection{Specific Objectives}
+
+\begin{enumerate}
+    \item \textbf{Embedding Analysis}: Compute and visualize CLIP embeddings for drone survey imagery to identify natural semantic clusters.
+
+    \item \textbf{Cluster Characterization}: Analyze the semantic distinctions captured by embedding-based clusters (e.g., altitude, crop visibility, image purpose).
+
+    \item \textbf{Comparison with Metadata}: Compare embedding-based organization with GPS/EXIF metadata-based approaches to understand complementary information.
+
+    \item \textbf{Similarity Search}: Implement and evaluate content-based image retrieval for finding similar drone images within large datasets.
+
+    \item \textbf{Workflow Integration}: Develop practical tools for integrating embedding-based organization into agricultural data pipelines.
+\end{enumerate}
+
+\subsection{Hypotheses}
+
+\begin{description}
+    \item[H1] Pretrained CLIP embeddings will separate drone images by semantic content (flight altitude, imaging purpose) without domain-specific training.
+
+    \item[H2] Embedding-based clusters will capture information orthogonal to GPS position---images from different locations but similar purposes will cluster together.
+
+    \item[H3] Similarity search based on embeddings will retrieve semantically relevant images more effectively than spatial proximity alone.
+\end{description}
+
+\todo{Refine hypotheses based on preliminary results}

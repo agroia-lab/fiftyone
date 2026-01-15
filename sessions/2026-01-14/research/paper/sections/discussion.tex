@@ -1,0 +1,184 @@
+% =============================================================================
+% DISCUSSION
+% Status: Updated for drone + ground camera analysis v0.4
+% =============================================================================
+
+\subsection{Interpretation of Results}
+
+\subsubsection{Semantic Clustering Without Domain-Specific Training}
+
+The most significant finding is that CLIP embeddings---trained on general web images, not agricultural data---successfully separated both drone and ground camera images by their visual characteristics. This demonstrates that:
+
+\begin{enumerate}
+    \item Pretrained vision-language models capture transferable visual concepts applicable to agricultural imagery
+    \item Altitude-related visual features (scale, detail level, field-of-view) are well-represented in general visual embeddings
+    \item Domain-specific fine-tuning is not necessary for basic organizational tasks
+    \item The methodology generalizes across different field sites with different flight patterns
+\end{enumerate}
+
+\observation{CLIP's training on diverse web data includes sufficient exposure to aerial/satellite imagery to enable meaningful agricultural drone image understanding without any agricultural training data}
+
+\subsubsection{Embedding Space vs. Geographic Space}
+
+A key advantage of embedding-based organization over GPS metadata is the capture of \emph{semantic} rather than \emph{spatial} similarity. This was demonstrated clearly at both sites:
+
+\begin{itemize}
+    \item \textbf{Santa Ines}: High-altitude images were geographically scattered across the field but formed a tight cluster in embedding space
+    \item \textbf{La Capilla}: Very close-up images were geographically concentrated but formed a completely separate semantic cluster from medium-altitude images
+\end{itemize}
+
+In both cases, GPS coordinates would organize images by location, while embedding-based organization groups them by visual content and purpose.
+
+\subsubsection{Site-Specific Clustering Patterns}
+
+The two sites showed notably different clustering characteristics:
+
+\begin{itemize}
+    \item \textbf{Santa Ines} (3.56 UMAP units separation, 2.7\% cross-edges): Moderate separation between close-up inspection and high-altitude overview images
+    \item \textbf{La Capilla} (12.93 UMAP units separation, 0\% cross-edges): Strong separation between plant-level detail and row-visible images
+\end{itemize}
+
+The 3.6$\times$ stronger separation at La Capilla likely reflects:
+\begin{enumerate}
+    \item \textbf{Greater visual contrast}: The distinction between ``dense foliage only'' and ``visible row structure'' is more pronounced than between ``close-up crop'' and ``field overview''
+    \item \textbf{Different flight protocols}: La Capilla may have used more distinct altitude bands during data collection
+    \item \textbf{Crop/field geometry}: Row visibility depends on altitude, crop density, and row spacing
+\end{enumerate}
+
+\subsubsection{Cluster Cohesion Asymmetry}
+
+At both sites, the minority cluster showed higher cohesion (tighter grouping):
+
+\begin{itemize}
+    \item Santa Ines: High-altitude cluster cohesion 0.276 vs close-up 0.424
+    \item La Capilla: Very close-up cluster cohesion 0.410 vs medium-altitude 0.726
+\end{itemize}
+
+This pattern suggests that minority image types have more consistent visual characteristics, while majority image types show greater internal diversity (varied crop conditions, viewing angles, etc.).
+
+\finding{Cluster cohesion differences indicate semantic diversity within categories---tight clusters represent homogeneous content, diffuse clusters contain varied content}
+
+\subsubsection{Ground Camera: Temporal Sensitivity Discovery}
+
+A surprising finding emerged from the ground camera analysis: Santa Ines ground imagery achieved the \textbf{highest clustering score} of all datasets (silhouette=0.795), with the two clusters corresponding almost perfectly to different survey dates:
+
+\begin{itemize}
+    \item Cluster 1 (83\%): January 8, 2026
+    \item Cluster 2 (17\%): January 6, 2026
+\end{itemize}
+
+This temporal clustering demonstrates that CLIP embeddings are sensitive to:
+\begin{enumerate}
+    \item \textbf{Lighting conditions}: Different times of day produce different visual signatures
+    \item \textbf{Environmental factors}: Weather, sun angle, and shadows affect image appearance
+    \item \textbf{Subtle crop changes}: Even 2 days of growth may produce detectable visual differences
+\end{enumerate}
+
+\observation{The ability to automatically detect survey date differences without explicit temporal metadata suggests embeddings could serve as an implicit quality control mechanism---flagging inconsistent imaging conditions across a dataset}
+
+\subsubsection{Multi-Modal Clustering Patterns}
+
+Comparing drone and ground camera data reveals that cluster separation is driven by \textbf{visual diversity} rather than capture modality:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Dataset} & \textbf{Inter-cluster Dist} & \textbf{Primary Factor} \\
+\midrule
+Santa Ines Ground & 12.95 & Temporal (2 dates) \\
+La Capilla Drone & 12.93 & Altitude (plant vs row) \\
+La Capilla Ground & 3.50 & Visual content \\
+Santa Ines Drone & 3.56 & Altitude (close vs high) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+This pattern suggests that CLIP embeddings respond to the \emph{magnitude of visual difference} regardless of whether that difference arises from altitude, time, or content---making them a versatile tool for diverse organizational tasks.
+
+\subsection{Practical Implications}
+
+\subsubsection{Automated Dataset Curation}
+
+The demonstrated clustering capability enables automated organization of drone survey data:
+
+\begin{itemize}
+    \item \textbf{Automatic image categorization}: Separate mapping images from inspection images without manual review
+    \item \textbf{Outlier detection}: Identify unusual images or flight anomalies for quality review
+    \item \textbf{Dataset filtering}: Select specific image types for downstream processing (e.g., ``show only close-up inspection images'')
+    \item \textbf{Coverage verification}: Ensure both overview and detail images are captured during surveys
+\end{itemize}
+
+\subsubsection{Content-Based Image Retrieval}
+
+Similarity search based on embeddings provides intuitive ``find similar'' functionality:
+
+\begin{itemize}
+    \item \textbf{Query by example}: Find all images similar to a selected sample
+    \item \textbf{Batch processing}: Process only images of a specific type
+    \item \textbf{Quality control}: Identify near-duplicates or redundant coverage
+    \item \textbf{Cross-site search}: Find similar images across multiple survey datasets
+\end{itemize}
+
+\subsubsection{Multi-Site Workflows}
+
+The consistent clustering behavior across sites suggests embeddings can support:
+\begin{itemize}
+    \item \textbf{Standardized pipelines}: Same analysis workflow applicable to any drone survey
+    \item \textbf{Cross-site comparisons}: Compare image type distributions across fields
+    \item \textbf{Scalable organization}: Handle large multi-site datasets without per-site configuration
+\end{itemize}
+
+\subsection{Data Availability Considerations}
+
+\subsubsection{Incomplete Multi-Modal Coverage}
+
+An important caveat is that only two of the four sites (Santa Ines and La Capilla) have both drone and ground camera imagery:
+
+\begin{itemize}
+    \item \textbf{Complete coverage}: Santa Ines and La Capilla have both modalities, enabling direct comparison
+    \item \textbf{Ground-only}: Apalta (961 images) and Camarico (33 images) lack drone surveys
+\end{itemize}
+
+This limits multi-modal analysis to the two fully-surveyed sites. The ground-only datasets (Apalta and Camarico) can only be compared to other ground camera datasets.
+
+\subsubsection{Dataset Size Variability}
+
+Dataset sizes vary significantly across sites and modalities:
+
+\begin{itemize}
+    \item \textbf{Largest}: Apalta ground camera (961 images)
+    \item \textbf{Smallest}: Camarico ground camera (33 images)
+    \item \textbf{Drone datasets}: 97--111 images (consistent)
+    \item \textbf{Ground datasets}: 33--961 images (highly variable)
+\end{itemize}
+
+\observation{Camarico's minimal dataset (33 images) still produced meaningful clustering (silhouette=0.461), suggesting the methodology is robust even with limited data---though conclusions should be drawn cautiously from small samples}
+
+\subsection{Limitations}
+
+\begin{enumerate}
+    \item \textbf{Sample size}: Analysis based on 2,659 total images from four sites; validation on additional sites would strengthen conclusions
+
+    \item \textbf{Binary clustering}: Current analysis identified only two categories per site; finer-grained distinctions (crop health, disease, growth stage) were not explored
+
+    \item \textbf{UMAP projection}: 2D visualization may lose information present in the full 512D embedding space; cluster boundaries may be sharper in high-dimensional space
+
+    \item \textbf{Model selection}: Only CLIP ViT-B/32 was evaluated; other models (larger CLIP variants, agricultural-specific models) may perform differently
+
+    \item \textbf{Crop specificity}: All sites were tomato fields; generalization to other crops requires validation
+
+    \item \textbf{Incomplete multi-modal coverage}: Only 2 of 4 sites have both drone and ground camera data; Apalta and Camarico analysis is limited to ground-level imagery only
+
+    \item \textbf{Dataset size variability}: Ground camera datasets range from 33 to 961 images, making direct statistical comparisons challenging
+\end{enumerate}
+
+\subsection{Future Directions}
+
+\begin{enumerate}
+    \item \textbf{Additional sites}: Extend analysis to more field sites and crop types
+    \item \textbf{Fine-grained classification}: Explore embeddings for crop health assessment, disease detection, growth stage classification
+    \item \textbf{Temporal analysis}: Track embedding changes across growing season to detect crop development patterns
+    \item \textbf{Model comparison}: Evaluate agricultural-specific models (e.g., fine-tuned on crop imagery) vs. general pretrained models
+    \item \textbf{Automated clustering}: Apply unsupervised clustering algorithms (k-means, HDBSCAN) to automatically identify cluster boundaries
+    \item \textbf{Multi-modal integration}: Combine embeddings with GPS, altitude, and spectral data for richer analysis
+\end{enumerate}
